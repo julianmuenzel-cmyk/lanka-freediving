@@ -666,4 +666,8 @@
       background: var(--ink, #1A1A1A);
       color: var(--cream, #F5EDE0);
     }
+    .dir-switch a:hover {
+      background: var(--ink, #1A1A1A);
+      color: var(--cream, #F5EDE0);
+    }
 

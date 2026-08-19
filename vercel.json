@@ -1,0 +1,27 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/team", "destination": "/school/", "permanent": false },
+    { "source": "/team/", "destination": "/school/", "permanent": false },
+    { "source": "/explore", "destination": "/", "permanent": false },
+    { "source": "/explore/", "destination": "/", "permanent": false },
+    { "source": "/explore/a-record-sleeve-blue", "destination": "/", "permanent": false },
+    { "source": "/explore/a-record-sleeve-blue/", "destination": "/", "permanent": false },
+    { "source": "/explore/a-record-sleeve-blue/:path*", "destination": "/:path*", "permanent": false },
+    { "source": "/explore/b2-quiet-poster-blue", "destination": "/quiet/", "permanent": false },
+    { "source": "/explore/b2-quiet-poster-blue/", "destination": "/quiet/", "permanent": false },
+    { "source": "/explore/b2-quiet-poster-blue/:path*", "destination": "/quiet/:path*", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/assets/:path*", "destination": "/explore/assets/:path*" },
+    { "source": "/quiet/styles.css", "destination": "/explore/b2-quiet-poster-blue/styles.css" },
+    { "source": "/quiet/site.js", "destination": "/explore/b2-quiet-poster-blue/site.js" },
+    { "source": "/quiet", "destination": "/explore/b2-quiet-poster-blue/" },
+    { "source": "/quiet/", "destination": "/explore/b2-quiet-poster-blue/" },
+    { "source": "/quiet/:path*", "destination": "/explore/b2-quiet-poster-blue/:path*" },
+    { "source": "/styles.css", "destination": "/explore/a-record-sleeve-blue/styles.css" },
+    { "source": "/site.js", "destination": "/explore/a-record-sleeve-blue/site.js" },
+    { "source": "/", "destination": "/explore/a-record-sleeve-blue/" },
+    { "source": "/:path*", "destination": "/explore/a-record-sleeve-blue/:path*" }
+  ]
+}
