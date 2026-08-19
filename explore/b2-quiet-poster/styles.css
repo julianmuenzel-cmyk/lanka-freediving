@@ -390,6 +390,34 @@
     }
     .wa svg { width: 1.55rem; height: 1.55rem; }
 
+    .dir-switch {
+      position: fixed;
+      left: 1rem;
+      bottom: 1rem;
+      z-index: 60;
+      display: flex;
+      border: 2px solid var(--ink, #1A1A1A);
+      background: var(--cream, #F5EDE0);
+      color: var(--ink, #1A1A1A);
+    }
+    .dir-switch a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.72rem 0.85rem;
+    }
+    .dir-switch a[aria-current="true"] {
+      background: var(--ink, #1A1A1A);
+      color: var(--cream, #F5EDE0);
+    }
+    .dir-switch a:hover {
+      background: var(--ink, #1A1A1A);
+      color: var(--cream, #F5EDE0);
+    }
+
     .reveal { opacity: 0; translate: 0 16px; }
     .reveal.is-in { opacity: 1; translate: 0; transition: opacity 0.55s ease, translate 0.55s ease; }
     @media (prefers-reduced-motion: reduce) {

@@ -46,26 +46,46 @@
 
   (function mountDirectionSwitch() {
     var path = window.location.pathname;
-    var keys = ["a-record-sleeve-blue", "b2-play-poster-blue", "a-record-sleeve", "b2-play-poster"];
-    var current = null;
-    for (var i = 0; i < keys.length; i++) {
-      if (path.indexOf("/" + keys[i]) !== -1) { current = keys[i]; break; }
+    var sleeveId = "a-record-sleeve";
+    var quietId = "b2-quiet-poster";
+    function isExplore(id) {
+      var needle = "/" + id;
+      var i = path.indexOf(needle);
+      if (i === -1) return false;
+      var after = path.charAt(i + needle.length);
+      return after === "" || after === "/";
     }
-    if (!current) return;
-    var ocean = current.indexOf("blue") !== -1;
-    var sleeveId = ocean ? "a-record-sleeve-blue" : "a-record-sleeve";
-    var playId = ocean ? "b2-play-poster-blue" : "b2-play-poster";
-    var sleeveHref = path.split(current).join(sleeveId);
-    var playHref = path.split(current).join(playId);
-    if (sleeveHref.charAt(sleeveHref.length - 1) !== "/" && sleeveHref.indexOf(".", sleeveHref.lastIndexOf("/")) === -1) sleeveHref += "/";
-    if (playHref.charAt(playHref.length - 1) !== "/" && playHref.indexOf(".", playHref.lastIndexOf("/")) === -1) playHref += "/";
-    var isSleeve = current.indexOf("a-record-sleeve") === 0;
+    var inSleeveExplore = isExplore(sleeveId);
+    var inQuietExplore = isExplore(quietId);
+    var sleeveHref;
+    var quietHref;
+    var isSleeve;
+    if (inSleeveExplore || inQuietExplore) {
+      var current = inSleeveExplore ? sleeveId : quietId;
+      sleeveHref = path.split(current).join(sleeveId);
+      quietHref = path.split(current).join(quietId);
+      isSleeve = inSleeveExplore;
+    } else {
+      var isQuiet = path === "/quiet" || path.indexOf("/quiet/") === 0;
+      var rest = isQuiet ? path.replace(/^\/quiet/, "") : path;
+      if (!rest) rest = "/";
+      sleeveHref = rest;
+      quietHref = rest === "/" ? "/quiet/" : "/quiet" + rest;
+      isSleeve = !isQuiet;
+    }
+    function withSlash(href) {
+      if (href === "/") return href;
+      if (href.charAt(href.length - 1) !== "/" && href.indexOf(".", href.lastIndexOf("/")) === -1) return href + "/";
+      return href;
+    }
+    sleeveHref = withSlash(sleeveHref);
+    quietHref = withSlash(quietHref);
     var nav = document.createElement("nav");
     nav.className = "dir-switch";
-    nav.setAttribute("aria-label", "Switch homepage direction");
+    nav.setAttribute("aria-label", "Switch site design");
     nav.innerHTML =
       '<a href="' + sleeveHref + '"' + (isSleeve ? ' aria-current="true"' : "") + ">Sleeve</a>" +
-      '<a href="' + playHref + '"' + (!isSleeve ? ' aria-current="true"' : "") + ">B2 Play</a>";
+      '<a href="' + quietHref + '"' + (!isSleeve ? ' aria-current="true"' : "") + ">Quiet</a>";
     document.body.appendChild(nav);
   })();
 
