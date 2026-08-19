@@ -2,6 +2,10 @@
   var toggle = document.getElementById("nav-toggle");
   var menu = document.getElementById("nav-menu");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var small = window.matchMedia("(max-width: 767px)").matches;
+  if (reduce || small) {
+    document.querySelectorAll(".jam-blob animate").forEach(function (el) { el.remove(); });
+  }
 
   if (toggle && menu) {
     function closeMenu() {

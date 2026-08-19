@@ -320,6 +320,7 @@
       display: block;
       width: 100%;
       height: 100%;
+      max-width: none;
     }
     .cta-end,
     .section-label { position: relative; z-index: 1; }
@@ -477,6 +478,9 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal, .reveal.is-in { opacity: 1; translate: none; transition: none; }
+      .jam-blob { animation: none; transform: none; }
+    }
+    @media (max-width: 767px) {
       .jam-blob { animation: none; transform: none; }
     }
 
