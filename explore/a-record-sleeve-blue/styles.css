@@ -302,21 +302,30 @@
       z-index: 1;
     }
 
+    .panel:has(> .jam-blob) {
+      padding-bottom: 9rem;
+    }
     .jam-blob {
       position: absolute;
       pointer-events: none;
       z-index: 0;
       color: var(--fg);
-      bottom: -14%;
+      bottom: 0;
       left: 0;
-      width: min(120vw, 980px);
-      animation: jam-blob 18s linear infinite;
+      width: 200%;
+      height: 8rem;
+      animation: jam-blob 12s linear infinite;
+    }
+    .jam-blob svg {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
     .cta-end,
     .section-label { position: relative; z-index: 1; }
     @keyframes jam-blob {
-      from { transform: translateX(78%); }
-      to { transform: translateX(-92%); }
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-50%, 0, 0); }
     }
 
     .instructor-grid {
@@ -468,7 +477,7 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal, .reveal.is-in { opacity: 1; translate: none; transition: none; }
-      .jam-blob { animation: none; transform: translateX(6%); }
+      .jam-blob { animation: none; transform: none; }
     }
 
     @media (max-width: 900px) {
