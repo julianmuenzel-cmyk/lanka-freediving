@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanka Freediving — Homepage directions</title>
+  <meta name="description" content="Slide through homepage directions for Molchanovs freediving Sri Lanka in Unawatuna: record sleeve, gig poster, quiet poster, quiet play, and liner notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bowlby+One+SC&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #E88FD8;
+      --burnt: #B8501A;
+      --turq: #2BC4C4;
+      --cobalt: #2B3FC4;
+      --red: #D94F2A;
+      --yellow: #F0C419;
+      --forest: #2F6B3C;
+      --cream: #F5EDE0;
+      --ink: #1A1A1A;
+      --font-display: "Bowlby One SC", "Alfa Slab One", serif;
+      --font-body: "Work Sans", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--ink);
+      color: var(--cream);
+      overflow: hidden;
+    }
+    :focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 2px;
+    }
+    body[data-mark="blue"] :focus-visible { outline-color: var(--turq); }
+    .chrome {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 0.75rem;
+      min-height: 4.25rem;
+      padding: 0.55rem 0.85rem;
+      background: var(--cream);
+      color: var(--ink);
+      border-bottom: 4px solid var(--ink);
+    }
+    .brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.7rem;
+      min-width: 0;
+    }
+    .brand img {
+      width: 3.4rem;
+      height: 3.4rem;
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
+      border: 2px solid var(--ink);
+    }
+    .marks {
+      display: flex;
+      gap: 0.35rem;
+    }
+    .marks button {
+      padding: 0;
+      border: 2px solid var(--ink);
+      background: transparent;
+      cursor: pointer;
+      line-height: 0;
+    }
+    .marks button img { border: 0; }
+    .marks button[aria-pressed="true"] {
+      outline: 3px solid var(--ink);
+      outline-offset: 2px;
+    }
+    body[data-mark="blue"] .marks button[aria-pressed="true"] {
+      outline-color: var(--cobalt);
+    }
+    body[data-mark="blue"] .tabs button[aria-selected="true"] {
+      background: var(--cobalt);
+      color: var(--turq);
+      border-color: var(--cobalt);
+    }
+    .brand div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      min-width: 0;
+    }
+    .brand strong {
+      font-family: var(--font-display);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+    .brand span {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .tabs button {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 2px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      padding: 0.45rem 0.7rem;
+      cursor: pointer;
+    }
+    .tabs button[aria-selected="true"] {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    .tools {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .icon-btn, .open {
+      border: 2px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      font: inherit;
+      cursor: pointer;
+      display: inline-grid;
+      place-items: center;
+      min-width: 2.3rem;
+      height: 2.3rem;
+      padding: 0 0.55rem;
+    }
+    .open {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .stage {
+      height: calc(100% - 4.25rem - 3.1rem);
+      overflow: hidden;
+      background: var(--ink);
+    }
+    .track {
+      display: flex;
+      height: 100%;
+      width: 500%;
+      transform: translateX(calc(var(--i, 0) * -20%));
+      transition: transform 0.45s ease;
+    }
+    .pane {
+      width: 20%;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: var(--cream);
+    }
+    .rail {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 0.75rem;
+      height: 3.1rem;
+      padding: 0 0.85rem;
+      background: var(--cream);
+      color: var(--ink);
+      border-top: 4px solid var(--ink);
+    }
+    .rail button {
+      font-family: var(--font-display);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      border: 2px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      padding: 0.35rem 0.7rem;
+      cursor: pointer;
+    }
+    .rail button:disabled { opacity: 0.35; cursor: not-allowed; }
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--ink);
+      cursor: pointer;
+    }
+    .count {
+      font-family: var(--font-display);
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .track { transition: none; }
+    }
+    @media (max-width: 800px) {
+      .chrome {
+        grid-template-columns: 1fr auto;
+        min-height: 0;
+      }
+      .brand { grid-column: 1 / -1; }
+      .tabs button { padding: 0.4rem 0.5rem; font-size: 0.64rem; }
+      .open span { display: none; }
+      .stage { height: calc(100% - 6.4rem - 3.1rem); }
+    }
+  </style>
+</head>
+<body data-mark="blue">
+  <header class="chrome">
+    <div class="brand">
+      <div class="marks" role="group" aria-label="Logo lead">
+        <button type="button" data-mark="orange" aria-pressed="false">
+          <img src="./assets/logo.png" width="1024" height="1024" alt="Sunset mark">
+        </button>
+        <button type="button" data-mark="blue" aria-pressed="true">
+          <img src="./assets/logo-blue.png" width="1024" height="1024" alt="Ocean mark">
+        </button>
+      </div>
+      <div>
+        <strong>Lanka Freediving</strong>
+        <span id="caption">A · Record sleeve · Ocean</span>
+      </div>
+    </div>
+    <ul class="tabs" role="tablist" aria-label="Homepage directions">
+      <li><button type="button" role="tab" id="tab-0" aria-selected="true" aria-controls="pane-0" data-i="0">A Sleeve</button></li>
+      <li><button type="button" role="tab" id="tab-1" aria-selected="false" aria-controls="pane-1" data-i="1">B Poster</button></li>
+      <li><button type="button" role="tab" id="tab-2" aria-selected="false" aria-controls="pane-2" data-i="2">B2 Quiet</button></li>
+      <li><button type="button" role="tab" id="tab-3" aria-selected="false" aria-controls="pane-3" data-i="3">B2 Play</button></li>
+      <li><button type="button" role="tab" id="tab-4" aria-selected="false" aria-controls="pane-4" data-i="4">C Notes</button></li>
+    </ul>
+    <div class="tools">
+      <a class="open" id="open" href="./a-record-sleeve-blue/" target="_blank" rel="noopener">Open <span>this version</span></a>
+    </div>
+  </header>
+
+  <div class="stage">
+    <div class="track" id="track" style="--i: 0">
+      <div class="pane" id="pane-0" role="tabpanel" aria-labelledby="tab-0">
+        <iframe id="frame-0" title="Direction A: Record sleeve" src="./a-record-sleeve-blue/"></iframe>
+      </div>
+      <div class="pane" id="pane-1" role="tabpanel" aria-labelledby="tab-1">
+        <iframe id="frame-1" title="Direction B: Gig poster" src="./b-gig-poster-blue/"></iframe>
+      </div>
+      <div class="pane" id="pane-2" role="tabpanel" aria-labelledby="tab-2">
+        <iframe id="frame-2" title="Direction B2: Quiet poster" src="./b2-quiet-poster-blue/"></iframe>
+      </div>
+      <div class="pane" id="pane-3" role="tabpanel" aria-labelledby="tab-3">
+        <iframe id="frame-3" title="Direction B2: Quiet play" src="./b2-play-poster-blue/"></iframe>
+      </div>
+      <div class="pane" id="pane-4" role="tabpanel" aria-labelledby="tab-4">
+        <iframe id="frame-4" title="Direction C: Liner notes" src="./c-liner-notes-blue/"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="rail">
+    <button type="button" id="prev">Prev</button>
+    <input id="slider" type="range" min="0" max="4" step="1" value="0" aria-label="Slide through homepage directions">
+    <div style="display:flex;align-items:center;gap:0.6rem">
+      <span class="count" id="count">1 / 5</span>
+      <button type="button" id="next">Next</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var versions = [
+        {
+          id: "a",
+          label: "A · Record sleeve",
+          orange: "./a-record-sleeve/",
+          blue: "./a-record-sleeve-blue/"
+        },
+        {
+          id: "b",
+          label: "B · Gig poster",
+          orange: "./b-gig-poster/",
+          blue: "./b-gig-poster-blue/"
+        },
+        {
+          id: "b2",
+          label: "B2 · Quiet poster",
+          orange: "./b2-quiet-poster/",
+          blue: "./b2-quiet-poster-blue/"
+        },
+        {
+          id: "b2-play",
+          label: "B2 · Quiet play",
+          orange: "./b2-play-poster/",
+          blue: "./b2-play-poster-blue/"
+        },
+        {
+          id: "c",
+          label: "C · Liner notes",
+          orange: "./c-liner-notes/",
+          blue: "./c-liner-notes-blue/"
+        }
+      ];
+      var markLabels = { orange: "Sunset", blue: "Ocean" };
+      var i = 0;
+      var mark = "blue";
+      var track = document.getElementById("track");
+      var slider = document.getElementById("slider");
+      var caption = document.getElementById("caption");
+      var count = document.getElementById("count");
+      var open = document.getElementById("open");
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var tabs = Array.prototype.slice.call(document.querySelectorAll(".tabs button"));
+      var markBtns = Array.prototype.slice.call(document.querySelectorAll(".marks button"));
+      var frames = [
+        document.getElementById("frame-0"),
+        document.getElementById("frame-1"),
+        document.getElementById("frame-2"),
+        document.getElementById("frame-3"),
+        document.getElementById("frame-4")
+      ];
+
+      function parseHash() {
+        var h = (location.hash || "").replace("#", "").toLowerCase();
+        var nextMark = "blue";
+        if (h.indexOf("sunset") !== -1 || h.indexOf("orange") !== -1 || (h && h.indexOf("blue") === -1 && h.indexOf("ocean") === -1 && (h === "a" || h === "b" || h === "b2" || h === "b2-play" || h === "play" || h === "c"))) nextMark = "orange";
+        if (h.indexOf("blue") !== -1 || h.indexOf("ocean") !== -1) nextMark = "blue";
+        var idx = 0;
+        if (h.indexOf("play") !== -1) idx = 3;
+        else if (h.indexOf("b2") !== -1 || h.indexOf("quiet") !== -1) idx = 2;
+        else if (h === "b" || h.indexOf("gig") !== -1 || h === "poster" || h === "b-blue") idx = 1;
+        else if (h.indexOf("c") === 0 || h.indexOf("liner") !== -1 || h.indexOf("notes") !== -1) idx = 4;
+        else if (h.indexOf("a") === 0 || h.indexOf("sleeve") !== -1) idx = 0;
+        return { i: idx, mark: nextMark };
+      }
+
+      function hrefFor(idx) {
+        return versions[idx][mark];
+      }
+
+      function applyMark() {
+        document.body.setAttribute("data-mark", mark);
+        markBtns.forEach(function (btn) {
+          btn.setAttribute("aria-pressed", btn.getAttribute("data-mark") === mark ? "true" : "false");
+        });
+        frames.forEach(function (frame, idx) {
+          var src = hrefFor(idx);
+          if (frame.getAttribute("src") !== src) frame.src = src;
+        });
+      }
+
+      function go(n, fromHash) {
+        i = Math.max(0, Math.min(versions.length - 1, n));
+        track.style.setProperty("--i", String(i));
+        slider.value = String(i);
+        caption.textContent = versions[i].label + " · " + markLabels[mark];
+        count.textContent = (i + 1) + " / " + versions.length;
+        open.href = hrefFor(i);
+        prev.disabled = i === 0;
+        next.disabled = i === versions.length - 1;
+        tabs.forEach(function (tab, idx) {
+          tab.setAttribute("aria-selected", idx === i ? "true" : "false");
+        });
+        if (!fromHash) {
+          history.replaceState(null, "", "#" + versions[i].id + (mark === "blue" ? "-blue" : ""));
+        }
+      }
+
+      function setMark(next, fromHash) {
+        mark = next === "blue" ? "blue" : "orange";
+        applyMark();
+        go(i, fromHash);
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () { go(Number(tab.getAttribute("data-i"))); });
+      });
+      markBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () { setMark(btn.getAttribute("data-mark")); });
+      });
+      prev.addEventListener("click", function () { go(i - 1); });
+      next.addEventListener("click", function () { go(i + 1); });
+      slider.addEventListener("input", function () { go(Number(slider.value)); });
+      window.addEventListener("hashchange", function () {
+        var parsed = parseHash();
+        mark = parsed.mark;
+        applyMark();
+        go(parsed.i, true);
+      });
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") go(i + 1);
+        if (e.key === "ArrowLeft") go(i - 1);
+        if (e.key === "1") go(0);
+        if (e.key === "2") go(1);
+        if (e.key === "3") go(2);
+        if (e.key === "4") go(3);
+        if (e.key === "5") go(4);
+        if (e.key === "o" || e.key === "O") setMark("blue");
+        if (e.key === "s" || e.key === "S") setMark("orange");
+      });
+
+      var start = parseHash();
+      mark = start.mark;
+      applyMark();
+      go(start.i, true);
+    })();
+  </script>
+</body>
+</html>

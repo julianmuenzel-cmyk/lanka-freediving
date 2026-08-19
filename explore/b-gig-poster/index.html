@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanka Freediving — Gig Poster | Molchanovs Freediving in Unawatuna</title>
+  <meta name="description" content="Molchanovs freediving Sri Lanka: courses, retreat, and expeditions in Unawatuna — printed like a 1974 surf-rock gig poster.">
+  <meta property="og:title" content="Lanka Freediving — Gig Poster | Molchanovs Freediving in Unawatuna">
+  <meta property="og:description" content="Molchanovs freediving Sri Lanka in Unawatuna. Small groups, warm water, no rush.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lankafreediving.com/explore/b-gig-poster/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bowlby+One+SC&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #E88FD8;
+      --burnt: #B8501A;
+      --turq: #2BC4C4;
+      --cobalt: #2B3FC4;
+      --red: #D94F2A;
+      --yellow: #F0C419;
+      --forest: #2F6B3C;
+      --cream: #F5EDE0;
+      --ink: #1A1A1A;
+      --font-display: "Bowlby One SC", "Alfa Slab One", serif;
+      --font-body: "Work Sans", system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      background: var(--yellow);
+      color: var(--ink);
+      overflow-x: hidden;
+      position: relative;
+    }
+    .ocean-film {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .ocean-film img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 72% 50%;
+      filter: contrast(1.12) saturate(0.78) sepia(0.22);
+    }
+    .ocean-film::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.42;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; color: inherit; }
+    h1, h2, h3, .display {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.055em;
+      font-weight: 400;
+      line-height: 0.92;
+      margin: 0;
+    }
+    p { margin: 0 0 1em; }
+    p:last-child { margin-bottom: 0; }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 0.6rem 1rem;
+      z-index: 100;
+    }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+
+    :focus-visible {
+      outline: 3px solid var(--fg, var(--ink));
+      outline-offset: 3px;
+    }
+
+    .pair-red { --bg: var(--red); --fg: var(--yellow); }
+    .pair-yellow { --bg: var(--yellow); --fg: var(--red); }
+    .pair-cream { --bg: var(--cream); --fg: var(--ink); }
+    .pair-ink { --bg: var(--ink); --fg: var(--cream); }
+    .pair-pink { --bg: var(--pink); --fg: var(--burnt); }
+    .pair-burnt { --bg: var(--burnt); --fg: var(--pink); }
+    .pair-turq { --bg: var(--turq); --fg: var(--cobalt); }
+    .pair-cobalt { --bg: var(--cobalt); --fg: var(--turq); }
+    .pair-forest { --bg: var(--forest); --fg: var(--pink); }
+
+    .sheet {
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    /* LOGO COMPONENT */
+    .logo-mark {
+      display: block;
+      width: 5.1rem;
+      height: 5.1rem;
+      flex-shrink: 0;
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      padding: 0;
+    }
+    .logo-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 3px solid var(--ink);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.65rem 1.1rem;
+    }
+    .nav-toggle {
+      display: none;
+      width: 2.6rem;
+      height: 2.6rem;
+      border: 1px solid var(--ink);
+      background: transparent;
+      padding: 0.55rem;
+      cursor: pointer;
+    }
+    .nav-toggle span {
+      display: block;
+      height: 2px;
+      background: var(--ink);
+      margin: 5px 0;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.05rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .nav-cta { border: 2px solid var(--ink); padding: 0.4rem 0.7rem; }
+
+    .poster {
+      position: relative;
+      z-index: 1;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.1rem 5rem;
+      overflow: visible;
+    }
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0.7rem;
+      border: 5px solid var(--ink);
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: 1.15rem;
+      row-gap: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cluster { margin: 4.2rem 0 6.2rem; }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      border: 2px solid currentColor;
+      padding: 0.8rem 1.1rem;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+    }
+    .btn-solid { background: var(--fg); color: var(--bg); }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+    .ph {
+      background: color-mix(in srgb, var(--fg, var(--ink)) 15%, transparent);
+      border: 2px solid var(--fg, var(--ink));
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1rem;
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .ph--hero { height: 500px; }
+    .ph--inline { height: 380px; }
+    .ph--portrait {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 22rem;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      padding: 0;
+      overflow: hidden;
+      margin-left: auto;
+    }
+    .ph--portrait img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
+      filter: contrast(1.08) saturate(0.85) sepia(0.12);
+    }
+    .ph--thumb { height: 220px; }
+
+    .wall {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem 1.5rem;
+      padding: 2.4rem 1.2rem 2.8rem;
+    }
+    .polaroid {
+      position: relative;
+      width: min(46vw, 168px);
+      background: var(--cream);
+      color: var(--ink);
+      border: 2px solid var(--ink);
+      padding: 0.55rem 0.55rem 1.65rem;
+      z-index: 1;
+    }
+    .polaroid::before {
+      content: "";
+      position: absolute;
+      inset: 7px -7px -7px 7px;
+      background: var(--ink);
+      z-index: -1;
+    }
+    .polaroid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+      filter: contrast(1.14) saturate(0.74) sepia(0.2);
+    }
+    .polaroid figcaption {
+      margin-top: 0.55rem;
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .polaroid .tape {
+      position: absolute;
+      top: -0.42rem;
+      left: 50%;
+      width: 2.35rem;
+      height: 0.72rem;
+      background: var(--cream);
+      border: 2px solid var(--ink);
+      transform: translateX(-50%) rotate(-3deg);
+    }
+
+    .caption {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .aside {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .tilt-n2 { transform: rotate(-2deg); }
+    .tilt-n3 { transform: rotate(-2.8deg); }
+    .tilt-p2 { transform: rotate(2deg); }
+    .tilt-p3 { transform: rotate(3.2deg); }
+
+    .bleed-sun {
+      position: absolute;
+      right: -14vw;
+      top: 4.5rem;
+      width: min(42vw, 340px);
+      color: var(--ink);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bleed-sun svg {
+      transform-origin: 50% 0%;
+      animation: jam-sun 16s ease-in-out infinite;
+    }
+    .jam-blob {
+      position: absolute;
+      left: -8%;
+      bottom: -10%;
+      width: min(95vw, 900px);
+      color: var(--ink);
+      pointer-events: none;
+      z-index: 0;
+      animation: jam-blob 20s linear infinite;
+    }
+    @keyframes jam-sun {
+      0%, 16% { transform: translateY(-42%); }
+      40%, 58% { transform: translateY(8%); }
+      84%, 100% { transform: translateY(-42%); }
+    }
+    @keyframes jam-blob {
+      from { transform: translateX(70%); }
+      to { transform: translateX(-90%); }
+    }
+    .bleed-wave {
+      position: absolute;
+      left: -16vw;
+      top: 46%;
+      width: min(70vw, 620px);
+      color: var(--ink);
+      pointer-events: none;
+    }
+    .bleed-dots {
+      position: absolute;
+      right: -3vw;
+      bottom: 22%;
+      width: 180px;
+      color: var(--ink);
+      pointer-events: none;
+    }
+
+    .hero-stamp-wrap {
+      grid-column: 1 / 9;
+      position: relative;
+      z-index: 2;
+      align-self: end;
+    }
+    .hero-stamp {
+      padding: 1.6rem 1.5rem 1.4rem;
+    }
+    .hero-title { font-size: clamp(2.5rem, 7vw, 6.4rem); max-width: 12ch; }
+    .hero-sub { max-width: 34ch; margin: 1rem 0 1.3rem; font-size: 1.1rem; }
+    #top.cluster {
+      min-height: calc(100vh - 4.5rem);
+      padding-top: 12vh;
+      align-items: end;
+      overflow: hidden;
+    }
+    .rule {
+      grid-column: 1 / -1;
+      color: var(--ink);
+      margin: 0.4rem 0 0.2rem;
+    }
+
+    .instructor-copy { grid-column: 2 / 8; }
+    .instructor-photo { grid-column: 8 / 13; }
+    .sheet-pad { padding: 1.4rem 1.3rem; }
+    .pull-quote {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: clamp(1.5rem, 3.2vw, 2.6rem);
+      line-height: 0.98;
+      margin: 0.4rem 0 1.1rem;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+    .tag {
+      border: 1px solid currentColor;
+      padding: 0.3rem 0.5rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .tour {
+      grid-column: 2 / 12;
+      padding: 1.6rem 1.4rem 1.3rem;
+    }
+    .tour h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1.1rem; }
+    .tour-row {
+      display: grid;
+      grid-template-columns: minmax(9rem, 0.9fr) minmax(0, 1.4fr) auto;
+      gap: 0.6rem 1rem;
+      align-items: baseline;
+      padding: 0.85rem 0;
+      border-bottom: 2px dotted currentColor;
+    }
+    .tour-row:first-of-type { border-top: 2px dotted currentColor; }
+    .tour-name { font-family: var(--font-display); letter-spacing: 0.06em; text-transform: uppercase; font-size: 1.15rem; }
+    .tour-detail { font-size: 0.95rem; }
+    .tour-price { font-family: var(--font-display); letter-spacing: 0.08em; font-size: 1.05rem; white-space: nowrap; }
+
+    .process-slab { grid-column: 1 / 12; padding: 1.5rem 1.3rem; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+      margin-top: 1rem;
+    }
+    .step-num { font-family: var(--font-display); font-size: 2.6rem; letter-spacing: 0.06em; }
+
+    .tease-a { grid-column: 1 / 7; }
+    .tease-b { grid-column: 7 / 13; }
+    .tease-a article, .tease-b article { padding: 1.4rem; }
+    .tease-title { font-size: clamp(1.8rem, 3.4vw, 2.8rem); margin: 0.35rem 0 0.8rem; }
+
+    .quotes { grid-column: 2 / 12; }
+    .quotes blockquote {
+      margin: 0 0 1.4rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 2px dotted var(--ink);
+      font-size: 1.2rem;
+    }
+    .quotes cite {
+      display: block;
+      margin-top: 0.45rem;
+      font-style: normal;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .cta-end {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+      gap: 1.5rem 2rem;
+      align-items: center;
+      padding: 1.5rem 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+    .cta-gif {
+      border: 3px solid currentColor;
+      overflow: hidden;
+    }
+    .cta-gif img { width: 100%; height: auto; display: block; }
+    .cta-end h2 { font-size: clamp(2.2rem, 6vw, 4.6rem); max-width: 9ch; }
+
+    .contact-copy { grid-column: 1 / 6; }
+    .contact-form { grid-column: 6 / 13; }
+    .field { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.8rem; }
+    .field label { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
+    .field input,
+    .field select,
+    .field textarea {
+      background: transparent;
+      border: 2px solid currentColor;
+      border-radius: 0;
+      padding: 0.65rem 0.7rem;
+      width: 100%;
+    }
+    .field textarea { min-height: 7.5rem; resize: vertical; }
+    .form-success {
+      border: 2px solid currentColor;
+      padding: 1.1rem;
+      grid-column: 6 / 13;
+    }
+
+    .site-footer {
+      position: relative;
+      z-index: 1;
+      background: var(--cream);
+      color: var(--ink);
+      border-top: 3px solid var(--ink);
+      padding: 2rem 1.1rem 5rem;
+    }
+    .footer-grid {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: end;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 0.6rem 1.1rem; list-style: none; margin: 0; padding: 0; }
+    .footer-links a { text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.74rem; font-weight: 600; }
+
+    .wa {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 50;
+      width: 3.4rem;
+      height: 3.4rem;
+      border: 2px solid var(--ink);
+      background: var(--cream);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+    }
+    .wa svg { width: 1.55rem; height: 1.55rem; }
+
+    .reveal { opacity: 0; translate: 0 16px; }
+    .reveal.is-in { opacity: 1; translate: 0; transition: opacity 0.55s ease, translate 0.55s ease; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal.is-in { opacity: 1; translate: none; transition: none; }
+      .jam-blob, .bleed-sun svg { animation: none; }
+      .jam-blob { transform: translateX(8%); }
+      .bleed-sun svg { transform: none; }
+    }
+
+    @media (max-width: 900px) {
+      .hero-stamp-wrap, .instructor-copy, .instructor-photo,
+      .tour, .process-slab, .tease-a, .tease-b, .quotes, .cta-end, .contact-copy, .contact-form, .form-success, .aside, .wall {
+        grid-column: 1 / -1;
+      }
+      .steps, .footer-grid { grid-template-columns: 1fr; }
+      .tour-row { grid-template-columns: 1fr; }
+      .ph--hero { height: 320px; }
+      .poster::before { inset: 0.4rem; border-width: 3px; }
+    }
+    @media (max-width: 767px) {
+      .nav-toggle { display: block; }
+      .nav { flex-wrap: wrap; }
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0.4rem 0 0.6rem;
+      }
+      .nav-menu.is-open { display: flex; }
+      .tilt-n2, .tilt-n3, .tilt-p2, .tilt-p3 { transform: none; }
+      .bleed-sun, .bleed-wave, .bleed-dots, .jam-blob { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="ocean-film" aria-hidden="true">
+    <img src="../assets/ocean-sunset.jpg" alt="">
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="motif-wave" viewBox="0 0 800 70" fill="none">
+      <path d="M-6 38 C 36 10, 58 56, 98 31 S 168 4, 208 41 S 278 62, 326 24 S 402 2, 444 39 S 524 66, 572 27 S 650 6, 698 42 S 762 58, 808 33" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="motif-spiral" viewBox="0 0 140 140" fill="none">
+      <path d="M70 72 m1-5 c 9-1 13 9 6 13 c -11 9 -24-7 -17-20 c 11-20 42 3 35 25 c -9 30 -53 23 -57-8 c -5-35 40-53 68-34 c 30 20 31 74 -8 89 c -46 18 -90-20 -86-64 c 5-48 60-76 104-51" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="motif-sun" viewBox="0 0 200 200" fill="none">
+      <circle cx="100" cy="100" r="30" stroke="currentColor" stroke-width="4"/>
+      <path d="M100 14 C 103 42, 98 52, 100 64" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M147 28 C 132 50, 126 62, 120 74" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M178 62 C 150 72, 140 80, 132 90" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M186 108 C 156 106, 146 102, 134 104" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M170 150 C 148 132, 138 128, 128 122" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M132 180 C 122 154, 118 144, 112 134" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M88 186 C 94 158, 98 148, 100 136" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M48 168 C 66 148, 74 140, 82 128" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M20 128 C 46 124, 56 120, 70 118" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M18 82 C 44 90, 54 94, 68 98" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M42 40 C 60 58, 70 66, 80 76" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="motif-dots" viewBox="0 0 180 80" fill="currentColor">
+      <circle cx="10" cy="22" r="3.2"/><circle cx="28" cy="48" r="2.1"/><circle cx="46" cy="14" r="4"/>
+      <circle cx="63" cy="38" r="2.4"/><circle cx="82" cy="62" r="3.5"/><circle cx="98" cy="18" r="2"/>
+      <circle cx="118" cy="44" r="4.2"/><circle cx="138" cy="12" r="2.6"/><circle cx="154" cy="52" r="3"/>
+      <circle cx="170" cy="30" r="2.3"/>
+    </symbol>
+    <symbol id="motif-blob" viewBox="0 0 800 220">
+      <path fill="currentColor" d="M-4 220 L-4 168 C 62 168, 102 48, 208 42 C 304 36, 338 138, 438 144 C 552 151, 598 56, 704 50 C 772 46, 812 122, 844 162 L 844 220 Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header sheet pair-cream">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo-mark" href="#top">
+        <img src="../assets/logo.png" width="1024" height="1024" alt="Lanka Freediving">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+        <span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Menu</span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#retreat">Retreat</a></li>
+        <li><a href="#expedition">Expedition</a></li>
+        <li><a href="/school">The School</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a class="nav-cta" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="poster">
+    <div class="bleed-sun tilt-p3" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><use href="#motif-sun"/></svg>
+    </div>
+
+    <section class="grid cluster" id="top" aria-labelledby="hero-title">
+      <svg class="jam-blob" viewBox="0 0 800 220" aria-hidden="true"><use href="#motif-blob"/></svg>
+      <div class="hero-stamp-wrap reveal">
+        <div class="hero-stamp sheet pair-red tilt-n2">
+          <p class="caption">UNAWATUNA · SRI LANKA · NOV–APR</p>
+          <h1 class="hero-title" id="hero-title">Breathe less. See more.</h1>
+          <p class="hero-sub">Molchanovs freediving courses in the warm water of southern Sri Lanka. Small groups, one instructor, no rush.</p>
+          <div class="btn-row">
+            <a class="btn btn-solid" href="#courses">See the courses</a>
+            <a class="btn" href="/school">What is freediving?</a>
+          </div>
+        </div>
+      </div>
+      <p class="aside tilt-n3" style="grid-column:9/13;align-self:end;margin-bottom:0.4rem">Live from the south coast</p>
+    </section>
+
+    <div class="grid"><div class="rule" aria-hidden="true"><svg viewBox="0 0 800 70"><use href="#motif-wave"/></svg></div></div>
+
+    <section class="grid cluster" id="instructor" aria-labelledby="instructor-label">
+      <p class="aside tilt-p2" style="grid-column:1/3" id="instructor-label">Your instructor</p>
+      <div class="instructor-copy sheet pair-cream sheet-pad reveal">
+        <blockquote class="pull-quote">“I don't just teach you to hold your breath. I teach you to find stillness.”</blockquote>
+        <p>Julian is a Molchanovs instructor, an Evolution Spearfishing instructor, and a certified safety diver. He learned to freedive in Lake Zurich, then in Zanzibar, the Blue Hole in Egypt, and the Pacific off Costa Rica, where he co-founded Evolution Spearfishing. He teaches with precision and patience — less about chasing depth, more about what happens in the quiet before you descend.</p>
+        <div class="tags">
+          <span class="tag">Molchanovs instructor</span>
+          <span class="tag">Evolution Spearfishing</span>
+          <span class="tag">Competition safety diver</span>
+        </div>
+      </div>
+      <div class="instructor-photo tilt-n2 reveal">
+        <div class="ph ph--portrait">
+          <img src="../assets/photos/julian-boat.jpg" width="334" height="800" alt="Julian, Molchanovs freediving instructor, on the boat">
+        </div>
+      </div>
+    </section>
+
+    <section class="grid cluster" id="courses" aria-labelledby="courses-title">
+      <div class="tour sheet pair-cobalt tilt-n2 reveal">
+        <p class="caption">On the bill</p>
+        <h2 id="courses-title">Courses</h2>
+        <div class="tour-row">
+          <p class="tour-name">Discover Freediving</p>
+          <p class="tour-detail">No certification · Half day · Breathing and relaxation fundamentals, a shallow-water breath-hold session, safety basics. For snorkellers, surfers, and the curious.</p>
+          <p class="tour-price">€120</p>
+        </div>
+        <div class="tour-row">
+          <p class="tour-name">Wave 1</p>
+          <p class="tour-detail">Molchanovs Wave 1 certification · 3 days · Online theory, pool work, static and dynamic apnea, Frenzel equalization, open water to 12–20 m. For complete beginners ready for real certification.</p>
+          <p class="tour-price">€350</p>
+        </div>
+        <div class="tour-row">
+          <p class="tour-name">Wave 2</p>
+          <p class="tour-detail">Molchanovs Wave 2 certification · 4 days · Mouthfill equalization, free immersion, rescue skills, depth to 24–30 m. For certified freedivers going deeper.</p>
+          <p class="tour-price">€450</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid cluster" id="impressions" aria-labelledby="wall-label">
+      <p class="aside tilt-p2" style="grid-column:1/6" id="wall-label">Impressions</p>
+      <div class="wall sheet pair-cream reveal">
+        <figure class="polaroid tilt-n3">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/session-open.jpg" width="1024" height="563" alt="Freediver in open water with arms wide">
+          <figcaption>Open water</figcaption>
+        </figure>
+        <figure class="polaroid tilt-p2">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/julian-line.jpg" width="329" height="1024" alt="Julian descending the line" style="object-position:50% 38%">
+          <figcaption>Julian · the line</figcaption>
+        </figure>
+        <figure class="polaroid tilt-n2">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/session-sun.jpg" width="630" height="930" alt="Freediver descending toward the sunburst">
+          <figcaption>The drop</figcaption>
+        </figure>
+        <figure class="polaroid tilt-p3">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/julian-depth.jpg" width="656" height="890" alt="Julian in open water, looking up">
+          <figcaption>Julian · depth</figcaption>
+        </figure>
+        <figure class="polaroid tilt-n2">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/session-line.jpg" width="676" height="1024" alt="Freediver on the line, looking up toward the surface">
+          <figcaption>Looking up</figcaption>
+        </figure>
+        <figure class="polaroid tilt-p2">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/session-pair.jpg" width="577" height="1024" alt="Two freedivers descending the line">
+          <figcaption>Two on the line</figcaption>
+        </figure>
+        <figure class="polaroid tilt-n3">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="../assets/photos/julian-boat.jpg" width="334" height="800" alt="Julian on the boat after a session" style="object-position:50% 12%">
+          <figcaption>Julian · the boat</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="bleed-wave" aria-hidden="true"><svg viewBox="0 0 800 70"><use href="#motif-wave"/></svg></div>
+
+    <section class="grid cluster" id="process" aria-labelledby="process-label">
+      <div class="process-slab sheet pair-yellow tilt-p2 reveal">
+        <p class="caption" id="process-label">The process</p>
+        <div class="steps">
+          <div>
+            <p class="step-num">01</p>
+            <h3>Get in touch</h3>
+            <p>Message us with your dates. We'll confirm within 24 hours and send theory access.</p>
+          </div>
+          <div>
+            <p class="step-num">02</p>
+            <h3>Meet at the hotel</h3>
+            <p>Gear provided, briefing, pool session. Get comfortable before the ocean.</p>
+          </div>
+          <div>
+            <p class="step-num">03</p>
+            <h3>Ocean</h3>
+            <p>Boat out early, open water dives, certification. Photos included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid cluster">
+      <section class="tease-a reveal" id="retreat" aria-labelledby="retreat-title">
+        <article class="sheet pair-pink tilt-n3">
+          <p class="caption">Retreat</p>
+          <h2 class="tease-title" id="retreat-title">A week to go quiet.</h2>
+          <p>Five days of freediving, breathwork, and warm water in Unawatuna. From €900 per person.</p>
+          <p style="margin-top:1rem"><a class="btn btn-solid" href="/retreat">See the retreat</a></p>
+        </article>
+      </section>
+      <section class="tease-b reveal" id="expedition" aria-labelledby="expedition-title">
+        <article class="sheet pair-forest tilt-p2">
+          <p class="caption">Expedition</p>
+          <h2 class="tease-title" id="expedition-title">Beyond the reef.</h2>
+          <p>Multi-day expeditions for certified freedivers, including our Batanta Island trip with Salty Tracks. Small groups, remote water.</p>
+          <p style="margin-top:1rem"><a class="btn btn-solid" href="/expedition">See expeditions</a></p>
+        </article>
+      </section>
+    </div>
+
+    <div class="bleed-dots tilt-n2" aria-hidden="true"><svg viewBox="0 0 180 80"><use href="#motif-dots"/></svg></div>
+
+    <section class="grid cluster" id="testimonials" aria-labelledby="stories-label">
+      <p class="aside tilt-p3" style="grid-column:1/4" id="stories-label">From the crowd</p>
+      <div class="quotes sheet pair-cream sheet-pad reveal">
+        <blockquote>
+          <p>“I came as a nervous snorkeller. I left as a freediver.”</p>
+          <cite>Emma K., Netherlands</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Julian is unbelievably calm. You feel safe the entire time.”</p>
+          <cite>Marc D., France</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Best three days of a six-week trip.”</p>
+          <cite>Priya S., UK</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="grid cluster" id="contact" aria-labelledby="see-you-title">
+      <div class="cta-end sheet pair-red tilt-n2 reveal">
+        <div class="cta-gif">
+          <picture>
+            <source srcset="../assets/photos/julian-water.jpg" media="(prefers-reduced-motion: reduce)">
+            <img src="../assets/photos/julian-water.gif" width="360" height="520" alt="Julian in the water beside the boat">
+          </picture>
+        </div>
+        <div>
+          <p class="caption">Until then</p>
+          <h2 id="see-you-title">See you in the water</h2>
+          <p style="margin-top:1rem">Unawatuna, November to April. Small groups, warm water, no rush.</p>
+        </div>
+      </div>
+      <div class="contact-copy sheet pair-cream sheet-pad reveal">
+        <p class="caption" id="contact-label">Get in touch</p>
+        <p>We're in Unawatuna from November to April. Message us about dates, courses, or anything you're unsure about.</p>
+        <p><a href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@lankafreediving.com">hello@lankafreediving.com</a></p>
+      </div>
+      <form class="contact-form sheet pair-cream sheet-pad reveal" id="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="course">Which course</label>
+          <select id="course" name="course" required>
+            <option value="">Select one</option>
+            <option>Discover Freediving</option>
+            <option>Wave 1</option>
+            <option>Wave 2</option>
+            <option>Retreat</option>
+            <option>Expedition</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="btn" type="submit" style="border-color:var(--ink)">Send</button>
+      </form>
+      <div class="form-success" id="form-success" hidden role="status">
+        <p>Message received. We'll get back to you within 24 hours.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <ul class="footer-links">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#retreat">Retreat</a></li>
+        <li><a href="#expedition">Expedition</a></li>
+        <li><a href="/school">The School</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="#contact">Get in touch</a></li>
+      </ul>
+      <div>
+        <p class="caption">Open November – April</p>
+        <p><a href="mailto:hello@lankafreediving.com">hello@lankafreediving.com</a></p>
+        <p class="caption" style="margin-top:0.8rem">© Lanka Freediving</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa" href="https://wa.me/940000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.37 2.15 11.75c0 1.72.45 3.4 1.3 4.88L2 22l5.55-1.43a10.1 10.1 0 0 0 4.49 1.05h.01c5.46 0 9.89-4.37 9.89-9.75S17.5 2 12.04 2zm0 17.82h-.01a8.4 8.4 0 0 1-4.27-1.17l-.31-.18-3.29.85.88-3.16-.2-.32a8.2 8.2 0 0 1-1.28-4.42c0-4.55 3.76-8.25 8.4-8.25 4.63 0 8.4 3.7 8.4 8.25 0 4.55-3.77 8.25-8.4 8.25zm4.6-6.18c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.13-.17.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-2-1.22-.74-.65-1.24-1.45-1.38-1.7-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.33-.77-1.82-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.23.25-.86.83-.86 2.03s.88 2.36 1 2.52c.12.17 1.73 2.6 4.2 3.64.59.25 1.04.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById("nav-toggle");
+      var menu = document.getElementById("nav-menu");
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function closeMenu() {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.classList.remove("is-open");
+      }
+      toggle.addEventListener("click", function () {
+        var open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("is-open", !open);
+      });
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.matchMedia("(max-width: 767px)").matches) closeMenu();
+        });
+      });
+
+      var form = document.getElementById("contact-form");
+      var success = document.getElementById("form-success");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        form.hidden = true;
+        success.hidden = false;
+      });
+
+      if (reduce) {
+        document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+      document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
