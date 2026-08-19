@@ -22,6 +22,17 @@
     { "source": "/styles.css", "destination": "/explore/a-record-sleeve-blue/styles.css" },
     { "source": "/site.js", "destination": "/explore/a-record-sleeve-blue/site.js" },
     { "source": "/", "destination": "/explore/a-record-sleeve-blue/" },
-    { "source": "/:path*", "destination": "/explore/a-record-sleeve-blue/:path*" }
+    { "source": "/courses", "destination": "/explore/a-record-sleeve-blue/courses/" },
+    { "source": "/courses/", "destination": "/explore/a-record-sleeve-blue/courses/" },
+    { "source": "/school", "destination": "/explore/a-record-sleeve-blue/school/" },
+    { "source": "/school/", "destination": "/explore/a-record-sleeve-blue/school/" },
+    { "source": "/retreat", "destination": "/explore/a-record-sleeve-blue/retreat/" },
+    { "source": "/retreat/", "destination": "/explore/a-record-sleeve-blue/retreat/" },
+    { "source": "/expedition", "destination": "/explore/a-record-sleeve-blue/expedition/" },
+    { "source": "/expedition/", "destination": "/explore/a-record-sleeve-blue/expedition/" },
+    { "source": "/faq", "destination": "/explore/a-record-sleeve-blue/faq/" },
+    { "source": "/faq/", "destination": "/explore/a-record-sleeve-blue/faq/" },
+    { "source": "/contact", "destination": "/explore/a-record-sleeve-blue/contact/" },
+    { "source": "/contact/", "destination": "/explore/a-record-sleeve-blue/contact/" }
   ]
 }
