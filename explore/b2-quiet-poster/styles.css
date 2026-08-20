@@ -179,7 +179,7 @@
       z-index: 1;
       max-width: 920px;
       margin: 0 auto;
-      padding: 0 1.2rem 4.5rem;
+      padding: 0 1.2rem 1.6rem;
     }
 
     .caption {
@@ -218,8 +218,8 @@
       min-height: calc(100vh - 4.4rem);
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding: 3rem 0 4rem;
+      justify-content: flex-start;
+      padding: 1.7rem 0 3.2rem;
     }
     .hero-title {
       font-size: clamp(2.6rem, 7vw, 5.6rem);
@@ -237,6 +237,9 @@
       color: var(--ink);
       padding: 2rem 1.6rem;
       margin: 2.75rem 0;
+    }
+    .poster > .panel:last-child {
+      margin-bottom: 1.2rem;
     }
     .rule {
       width: min(100%, 16rem);
@@ -402,10 +405,11 @@
     .site-footer {
       position: relative;
       z-index: 1;
+      min-height: 0;
       background: var(--cream);
       color: var(--ink);
       border-top: 2px solid var(--ink);
-      padding: 2rem 1.2rem 5rem;
+      padding: 1.6rem 1.2rem 5rem;
     }
     .footer-grid {
       max-width: 920px;
@@ -413,7 +417,7 @@
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 1.5rem;
-      align-items: end;
+      align-items: start;
     }
     .footer-links { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; list-style: none; margin: 0; padding: 0; }
     .footer-links a { text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.72rem; font-weight: 600; }
