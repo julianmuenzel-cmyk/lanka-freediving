@@ -219,7 +219,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 1.7rem 0 2.2rem;
+      padding: 1.7rem 0 4rem;
     }
     .hero-title {
       font-size: clamp(2.6rem, 7vw, 5.6rem);
@@ -240,6 +240,9 @@
     }
     .poster > .panel:last-child {
       margin-bottom: 1.2rem;
+    }
+    .hero + .panel {
+      margin-top: 0;
     }
     .rule {
       width: min(100%, 16rem);
