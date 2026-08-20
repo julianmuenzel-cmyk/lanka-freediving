@@ -412,6 +412,15 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+    .review-stars {
+      margin-bottom: 0.75rem;
+      color: var(--yellow);
+    }
+    .review-stars svg {
+      width: 6.8rem;
+      height: auto;
+      display: block;
+    }
 
     .cta-end {
       display: grid;

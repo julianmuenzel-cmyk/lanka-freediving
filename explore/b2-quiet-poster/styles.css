@@ -357,6 +357,15 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+    .review-stars {
+      margin-bottom: 0.55rem;
+      color: var(--red);
+    }
+    .review-stars svg {
+      width: 6.4rem;
+      height: auto;
+      display: block;
+    }
 
     .cta-end {
       display: grid;

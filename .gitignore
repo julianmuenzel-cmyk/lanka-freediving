@@ -4,3 +4,5 @@
 node_modules/
 .vercel
 *.log
+explore/assets/studio/exports/_*/
+explore/assets/studio/exports/lanka-spongebob-opening-overlay.mp4

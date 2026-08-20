@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lanka Content Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="studio-header">
+    <div class="header-inner">
+      <button type="button" class="back-btn" id="back-btn" hidden aria-label="Back to moodboard">&larr;</button>
+      <h1 class="studio-title">Content Studio</h1>
+      <div class="style-switch" role="group" aria-label="Brand style">
+        <button type="button" class="style-btn is-active" data-style="sleeve">Sleeve</button>
+        <button type="button" class="style-btn" data-style="quiet">Quiet</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Moodboard -->
+    <section id="view-moodboard" class="view">
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" id="photo-input" accept="image/*" multiple hidden>
+        <label for="photo-input" class="upload-label">
+          <span class="upload-icon">+</span>
+          <span>Add photos</span>
+        </label>
+        <div class="photo-strip" id="photo-strip" aria-label="Uploaded photos"></div>
+      </div>
+
+      <div class="layout-section">
+        <h2 class="section-label">Meme pack</h2>
+        <p class="section-note">Ready to post · grid upload order numbered</p>
+        <div class="export-gallery" id="meme-pack-gallery"></div>
+      </div>
+
+      <div class="layout-section">
+        <h2 class="section-label">Carousels</h2>
+        <div class="layout-grid" id="carousel-layouts"></div>
+      </div>
+
+      <div class="layout-section">
+        <h2 class="section-label">Feed grids</h2>
+        <p class="section-note">3:4 tiles · post in numbered order</p>
+        <div class="layout-grid" id="grid-layouts"></div>
+      </div>
+
+      <div class="layout-section">
+        <h2 class="section-label">Stories</h2>
+        <div class="layout-grid" id="story-layouts"></div>
+      </div>
+    </section>
+
+    <!-- Editor -->
+    <section id="view-editor" class="view" hidden>
+      <div class="editor-preview-wrap">
+        <canvas id="preview-canvas" aria-label="Layout preview"></canvas>
+        <div class="guide-overlay" id="guide-overlay" hidden></div>
+      </div>
+
+      <div class="editor-controls">
+        <label class="control">
+          <span>Headline</span>
+          <input type="text" id="headline-input" maxlength="80" placeholder="Breathe less. See more.">
+        </label>
+        <label class="control">
+          <span>Subline</span>
+          <input type="text" id="subline-input" maxlength="80" placeholder="Unawatuna · Nov–Apr">
+        </label>
+        <label class="control">
+          <span>Zoom</span>
+          <input type="range" id="zoom-slider" min="100" max="300" value="100">
+        </label>
+        <label class="control">
+          <span>Pan horizontal</span>
+          <input type="range" id="pan-x-slider" min="-100" max="100" value="0">
+        </label>
+        <label class="control">
+          <span>Pan vertical</span>
+          <input type="range" id="pan-y-slider" min="-100" max="100" value="0">
+        </label>
+        <label class="control checkbox-control">
+          <input type="checkbox" id="guides-toggle" checked>
+          <span>Show cut guides</span>
+        </label>
+        <button type="button" class="btn-primary" id="generate-btn">Generate frames</button>
+      </div>
+    </section>
+
+    <!-- Export -->
+    <section id="view-export" class="view" hidden>
+      <p class="export-hint">Long-press each frame on iPhone to save to Photos. Tap to download on desktop.</p>
+      <div class="frame-strip" id="frame-strip"></div>
+      <button type="button" class="btn-secondary" id="new-export-btn">New layout</button>
+    </section>
+  </main>
+
+  <script src="studio.js"></script>
+</body>
+</html>
