@@ -88,4 +88,99 @@
       '<a href="' + quietHref + '"' + (!isSleeve ? ' aria-current="true"' : "") + ">Quiet</a>";
     document.body.appendChild(nav);
   })();
+
+  (function mountOceanCall() {
+    var path = window.location.pathname;
+    if (/\/contact\/?$/.test(path) || /\/contact\/index\.html$/.test(path)) return;
+    try {
+      if (sessionStorage.getItem("lf-ocean-calling") === "hung") return;
+    } catch (e) { /* private mode */ }
+
+    function siteRoot() {
+      var ids = ["a-record-sleeve", "b2-quiet-poster"];
+      for (var i = 0; i < ids.length; i++) {
+        var needle = "/" + ids[i];
+        var idx = path.indexOf(needle);
+        if (idx === -1) continue;
+        var after = path.charAt(idx + needle.length);
+        if (after === "" || after === "/") return path.slice(0, idx + needle.length) + "/";
+      }
+      if (path === "/quiet" || path.indexOf("/quiet/") === 0) return "/quiet/";
+      return "/";
+    }
+    function artSrc() {
+      var explore = path.indexOf("/explore/");
+      if (explore !== -1) return path.slice(0, explore) + "/explore/assets/shell-phone-quiet.jpg";
+      return "/assets/shell-phone-quiet.jpg";
+    }
+
+    var root = document.createElement("div");
+    root.className = "ocean-call";
+    root.id = "ocean-call";
+    root.hidden = true;
+    root.innerHTML =
+      '<div class="ocean-call-card" role="dialog" aria-modal="true" aria-labelledby="ocean-call-title" tabindex="-1">' +
+        '<button type="button" class="ocean-call-close" aria-label="Hang up">&times;</button>' +
+        '<div class="ocean-call-top"><p class="ocean-call-kicker">Ring ring</p></div>' +
+        '<div class="ocean-call-body">' +
+          '<img class="ocean-call-art" src="' + artSrc() + '" width="1024" height="1024" alt="">' +
+          '<h2 class="ocean-call-title" id="ocean-call-title">Hey — the ocean is calling</h2>' +
+          '<p class="ocean-call-pick">Pick up.</p>' +
+          '<div class="ocean-call-actions">' +
+            '<a class="btn btn-solid" href="' + siteRoot() + 'contact/">Contact us</a>' +
+            '<a class="btn" href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>' +
+          "</div>" +
+        "</div>" +
+      "</div>";
+    document.body.appendChild(root);
+
+    var card = root.querySelector(".ocean-call-card");
+    var closeBtn = root.querySelector(".ocean-call-close");
+    var lastFocus = null;
+
+    function focusables() {
+      return Array.prototype.slice.call(card.querySelectorAll("a, button"));
+    }
+    function open() {
+      lastFocus = document.activeElement;
+      root.hidden = false;
+      document.documentElement.classList.add("ocean-call-open");
+      document.body.style.overflow = "hidden";
+      card.focus();
+    }
+    function close() {
+      root.hidden = true;
+      document.documentElement.classList.remove("ocean-call-open");
+      document.body.style.overflow = "";
+      try { sessionStorage.setItem("lf-ocean-calling", "hung"); } catch (e) { /* ignore */ }
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    closeBtn.addEventListener("click", close);
+    root.addEventListener("click", function (e) {
+      if (!card.contains(e.target)) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (root.hidden) return;
+      if (e.key === "Escape") {
+        e.preventDefault();
+        close();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      var items = focusables();
+      if (!items.length) return;
+      var first = items[0];
+      var last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+
+    window.setTimeout(open, reduce ? 400 : 1800);
+  })();
 })();

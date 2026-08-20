@@ -449,11 +449,126 @@
       color: var(--cream, #F5EDE0);
     }
 
+    .ocean-call {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: grid;
+      place-items: center;
+      padding: 1.1rem;
+      background: color-mix(in srgb, var(--ink) 42%, transparent);
+    }
+    .ocean-call[hidden] { display: none; }
+    .ocean-call-card {
+      --bg: var(--cream);
+      --fg: var(--ink);
+      position: relative;
+      width: min(100%, 26.5rem);
+      background: var(--bg);
+      color: var(--fg);
+      border: 2px solid var(--ink);
+      padding: 0 0 1.4rem;
+    }
+    .ocean-call-top {
+      position: relative;
+      isolation: isolate;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 0.85rem 3.1rem 1.15rem 1.25rem;
+      margin-bottom: 1.45rem;
+    }
+    .ocean-call-top::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      height: 1.05rem;
+      z-index: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 32' preserveAspectRatio='none'%3E%3Cpath fill='%231A1A1A' d='M0 0h160v10c-14 0-22 16-40 16S98 10 80 10 58 26 40 26 18 10 0 10V0z'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-size: 7.2rem 100%;
+      background-position: top left;
+    }
+    .ocean-call-kicker {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .ocean-call-close {
+      position: absolute;
+      top: 0.55rem;
+      right: 0.7rem;
+      z-index: 2;
+      width: 2.2rem;
+      height: 2.2rem;
+      border: 2px solid var(--cream);
+      background: transparent;
+      color: var(--cream);
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0;
+    }
+    .ocean-call-close:focus-visible { outline-color: var(--cream); }
+    .ocean-call-body { padding: 0 1.3rem; }
+    .ocean-call-art {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      margin: 0 0 0.85rem;
+      display: block;
+      border: 2px solid var(--ink);
+      transform-origin: center;
+      animation: ocean-ring 2.15s linear infinite;
+    }
+    .ocean-call-title {
+      font-size: clamp(1.65rem, 6.2vw, 2.4rem);
+      margin: 0.1rem 0 0.35rem;
+      max-width: 12ch;
+    }
+    .ocean-call-pick {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.02rem;
+      margin: 0 0 1.1rem;
+    }
+    .ocean-call-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    .ocean-call-actions .btn { text-align: center; }
+    @keyframes ocean-ring {
+      0%, 17%, 100% { transform: translate(0, 0) rotate(0deg); }
+      2% { transform: translate(-7px, 2px) rotate(-1.1deg); }
+      4% { transform: translate(7px, -2px) rotate(1.2deg); }
+      6% { transform: translate(-6px, 1px) rotate(-0.9deg); }
+      8% { transform: translate(6px, 2px) rotate(0.8deg); }
+      10% { transform: translate(-4px, -1px) rotate(-0.6deg); }
+      12% { transform: translate(4px, 1px) rotate(0.5deg); }
+      14% { transform: translate(-2px, 0) rotate(-0.25deg); }
+      16% { transform: translate(1px, 0) rotate(0.15deg); }
+    }
+    @media (max-width: 520px) {
+      .ocean-call-actions { flex-direction: column; }
+      .ocean-call-actions .btn { width: 100%; }
+    }
+
     .reveal { opacity: 0; translate: 0 16px; }
     .reveal.is-in { opacity: 1; translate: 0; transition: opacity 0.55s ease, translate 0.55s ease; }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal, .reveal.is-in { opacity: 1; translate: none; transition: none; }
+      .ocean-call-art { animation: none; }
     }
 
     @media (max-width: 800px) {
