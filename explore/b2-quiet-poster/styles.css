@@ -370,6 +370,19 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.75rem;
+      align-items: start;
+    }
+    .contact-art {
+      margin: 0 0 1.1rem;
+      border: 2px solid var(--ink);
+      overflow: hidden;
+    }
+    .contact-art img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 1;
+      object-fit: cover;
     }
     .field { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.85rem; }
     .field label { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }

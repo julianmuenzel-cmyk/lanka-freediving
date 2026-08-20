@@ -72,7 +72,10 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      padding: calc(var(--nav-h) + 0.35rem) clamp(1.1rem, 3vw, 2.75rem) clamp(1.4rem, 3vh, 2.2rem);
+      padding: 1.15rem clamp(1.1rem, 3vw, 2.75rem) clamp(1.4rem, 3vh, 2.2rem);
+    }
+    main > .panel:first-child {
+      padding-top: 1.05rem;
     }
 
     .motif { color: var(--fg); }
@@ -228,7 +231,8 @@
     .sleeve-hero {
       position: absolute;
       right: clamp(1rem, 5vw, 3.2rem);
-      bottom: clamp(4.8rem, 11vh, 6.8rem);
+      top: 1.05rem;
+      bottom: auto;
       z-index: 1;
     }
     .sleeves .sleeve-body { align-items: start; }
@@ -258,7 +262,8 @@
     .sleeve-body {
       flex: 1;
       display: grid;
-      align-items: end;
+      align-items: start;
+      padding-top: 0.15rem;
       position: relative;
       z-index: 1;
     }
@@ -428,7 +433,19 @@
       grid-template-columns: 1fr 1fr;
       gap: 3vw;
       flex: 1;
-      align-items: end;
+      align-items: start;
+    }
+    .contact-art {
+      margin: 0 0 1.15rem;
+      border: 4px solid currentColor;
+      overflow: hidden;
+    }
+    .contact-art img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 1;
+      object-fit: cover;
     }
     .field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.9rem; }
     .field label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
@@ -499,9 +516,10 @@
       .sleeve-hero, .tease-art {
         position: relative;
         right: auto;
+        top: auto;
         bottom: auto;
         width: min(100%, 28rem);
-        margin: 1.4rem 0 0;
+        margin: 0 0 1.2rem;
       }
     }
     @media (max-width: 767px) {
