@@ -61,11 +61,6 @@
     { "source": "/studio/styles.css", "destination": "/explore/studio/styles.css" },
     { "source": "/studio/studio.js", "destination": "/explore/studio/studio.js" },
     { "source": "/studio", "destination": "/explore/studio/" },
-    { "source": "/studio/", "destination": "/explore/studio/" },
-    {
-      "source": "/:path*",
-      "destination": "/404.html",
-      "missing": [{ "type": "filesystem" }]
-    }
+    { "source": "/studio/", "destination": "/explore/studio/" }
   ]
 }
