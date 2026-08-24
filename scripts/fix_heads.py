@@ -145,6 +145,13 @@ def build_head(meta: dict, css_href: str) -> str:
   <link rel="canonical" href="{url}">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">{schema_lines}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDYRTZ7WJS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag("js", new Date());
+    gtag("config", "G-LDYRTZ7WJS");
+  </script>
   <script defer data-domain="lankafreediving.com" src="https://plausible.io/js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

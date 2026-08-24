@@ -90,10 +90,10 @@ Redeploy after updating.
 
 ## 8. Analytics
 
-Plausible is included on all public Sleeve pages (`data-domain="lankafreediving.com"`).
+Google Analytics 4 is on all public Sleeve pages (`G-LDYRTZ7WJS`).
 
-1. Sign up at [plausible.io](https://plausible.io).
-2. Add site `lankafreediving.com` — the script is already on the site.
+1. Open [analytics.google.com](https://analytics.google.com) → confirm realtime shows visits after deploy.
+2. Optional: Plausible is also included (`data-domain="lankafreediving.com"`) if you want a privacy-light second view.
 
 ## 9. Molchanovs & social
 
