@@ -1,3 +1,5 @@
+import { Resend } from "resend";
+
 const RATE_WINDOW_MS = 60_000;
 const RATE_MAX = 5;
 const hits = new Map();
@@ -107,25 +109,18 @@ export default async function handler(req, res) {
   `;
 
   try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: String(email).trim(),
-        subject,
-        text,
-        html,
-      }),
+    const resend = new Resend(apiKey);
+    const { error } = await resend.emails.send({
+      from,
+      to: [to],
+      replyTo: String(email).trim(),
+      subject,
+      text,
+      html,
     });
 
-    if (!response.ok) {
-      const err = await response.text();
-      console.error("Resend error:", response.status, err);
+    if (error) {
+      console.error("Resend error:", error);
       json(res, 502, { error: "Could not send message. Try WhatsApp instead." });
       return;
     }
