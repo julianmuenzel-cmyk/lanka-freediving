@@ -805,3 +805,44 @@
       .ocean-call-art { animation: none; }
     }
 
+    /* Guides */
+    .guide-grid {
+      display: grid;
+      gap: 2rem;
+      max-width: 52rem;
+    }
+    .guide-card h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3vw, 1.75rem);
+      margin: 0 0 0.5rem;
+      line-height: 1.15;
+    }
+    .guide-card h2 a { color: inherit; text-decoration: none; }
+    .guide-card h2 a:hover { text-decoration: underline; }
+    .guide-body {
+      max-width: 42rem;
+      line-height: 1.65;
+    }
+    .guide-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      margin: 2rem 0 0.6rem;
+    }
+    .guide-body p { margin: 0 0 1rem; }
+    .guide-figure {
+      margin: 0 0 1.5rem;
+      max-width: 36rem;
+    }
+    .guide-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 3px solid var(--ink);
+    }
+    .guide-teasers p { margin: 0.35rem 0; }
+    .form-error {
+      color: var(--red, #c0392b);
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+    }
+

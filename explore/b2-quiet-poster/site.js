@@ -128,7 +128,7 @@
           '<p class="ocean-call-pick">Pick up.</p>' +
           '<div class="ocean-call-actions">' +
             '<a class="btn btn-solid" href="' + siteRoot() + 'contact/">Contact us</a>' +
-            '<a class="btn" href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>' +
+            '<a class="btn" href="https://wa.me/41787751831" target="_blank" rel="noopener">WhatsApp</a>' +
           "</div>" +
         "</div>" +
       "</div>";

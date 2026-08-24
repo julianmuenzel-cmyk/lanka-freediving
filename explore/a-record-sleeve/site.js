@@ -1,4 +1,23 @@
 (function () {
+  var cfg = window.LANKA_SITE || {};
+  var waNum = cfg.whatsapp || "41787751831";
+  var email = cfg.email || "hello@lankafreediving.com";
+  var waUrl = "https://wa.me/" + waNum;
+
+  document.querySelectorAll("[data-lf-wa], a.wa").forEach(function (el) {
+    el.setAttribute("href", waUrl);
+  });
+  document.querySelectorAll("[data-lf-email]").forEach(function (el) {
+    el.setAttribute("href", "mailto:" + email);
+    if (!el.textContent.trim()) el.textContent = email;
+  });
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (el) {
+    if (el.getAttribute("href").indexOf(waNum) === -1) el.setAttribute("href", waUrl);
+  });
+  document.querySelectorAll('a[href="mailto:hello@lankafreediving.com"]').forEach(function (el) {
+    el.setAttribute("href", "mailto:" + email);
+  });
+
   var toggle = document.getElementById("nav-toggle");
   var menu = document.getElementById("nav-menu");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -25,12 +44,63 @@
   }
 
   document.querySelectorAll("form").forEach(function (form) {
+    if (form.id !== "contact-form" && !form.querySelector("[name=\"message\"]")) return;
     var success = form.parentElement && form.parentElement.querySelector(".form-success");
     if (!success) success = document.getElementById("form-success");
+    var errEl = form.querySelector(".form-error");
+    if (!errEl && form.parentElement) errEl = form.parentElement.querySelector(".form-error");
+    if (!errEl) {
+      errEl = document.createElement("p");
+      errEl.className = "form-error";
+      errEl.hidden = true;
+      errEl.setAttribute("role", "alert");
+      form.appendChild(errEl);
+    }
+    if (!form.querySelector("[name=\"website\"]")) {
+      var trap = document.createElement("div");
+      trap.hidden = true;
+      trap.setAttribute("aria-hidden", "true");
+      trap.innerHTML = '<label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off">';
+      form.insertBefore(trap, form.firstChild);
+    }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      form.hidden = true;
-      if (success) success.hidden = false;
+      errEl.hidden = true;
+      var btn = form.querySelector('button[type="submit"]');
+      var prevLabel = btn ? btn.textContent : "";
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = "Sending…";
+      }
+      var data = {
+        name: (form.querySelector("[name=\"name\"]") || {}).value || "",
+        email: (form.querySelector("[name=\"email\"]") || {}).value || "",
+        course: (form.querySelector("[name=\"course\"]") || {}).value || "",
+        message: (form.querySelector("[name=\"message\"]") || {}).value || "",
+        website: (form.querySelector("[name=\"website\"]") || {}).value || "",
+      };
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (res) {
+          return res.json().then(function (body) {
+            if (!res.ok) throw new Error(body.error || "Send failed");
+            form.hidden = true;
+            if (success) success.hidden = false;
+          });
+        })
+        .catch(function (err) {
+          errEl.textContent = err.message || "Could not send. Try WhatsApp.";
+          errEl.hidden = false;
+        })
+        .finally(function () {
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = prevLabel;
+          }
+        });
     });
   });
 
@@ -132,7 +202,7 @@
           '<p class="ocean-call-pick">Pick up.</p>' +
           '<div class="ocean-call-actions">' +
             '<a class="btn btn-solid" href="' + siteRoot() + 'contact/">Contact us</a>' +
-            '<a class="btn" href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>' +
+            '<a class="btn" href="' + waUrl + '" target="_blank" rel="noopener">WhatsApp</a>' +
           "</div>" +
         "</div>" +
       "</div>";

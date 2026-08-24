@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /studio/
+Disallow: /quiet/
+
+Sitemap: https://lankafreediving.com/sitemap.xml
