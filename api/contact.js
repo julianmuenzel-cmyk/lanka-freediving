@@ -83,7 +83,7 @@ export default async function handler(req, res) {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL || "hello@lankafreediving.com";
   const from =
-    process.env.CONTACT_FROM_EMAIL || "Lanka Freediving <onboarding@resend.dev>";
+    process.env.CONTACT_FROM_EMAIL || "Lanka Freediving <hello@lankafreediving.com>";
 
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set");
