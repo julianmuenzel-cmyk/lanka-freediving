@@ -820,8 +820,16 @@
     .guide-card h2 a { color: inherit; text-decoration: none; }
     .guide-card h2 a:hover { text-decoration: underline; }
     .guide-body {
-      max-width: 42rem;
       line-height: 1.65;
+    }
+    .panel.guide-body {
+      max-width: none;
+      width: 100%;
+      min-height: 0;
+      align-items: flex-start;
+    }
+    .panel.guide-body > * {
+      max-width: 42rem;
     }
     .guide-body h2 {
       font-family: var(--font-display);
