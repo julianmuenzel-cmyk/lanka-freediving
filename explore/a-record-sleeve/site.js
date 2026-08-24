@@ -79,7 +79,7 @@
         message: (form.querySelector("[name=\"message\"]") || {}).value || "",
         website: (form.querySelector("[name=\"website\"]") || {}).value || "",
       };
-      fetch("/api/contact", {
+      fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

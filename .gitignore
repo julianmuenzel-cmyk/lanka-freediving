@@ -2,6 +2,7 @@
 .env
 .env.*
 node_modules/
+public/explore/
 .vercel
 *.log
 explore/assets/studio/exports/_*/

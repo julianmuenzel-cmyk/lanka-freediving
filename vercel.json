@@ -1,5 +1,7 @@
 {
   "trailingSlash": true,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
   "redirects": [
     { "source": "/team", "destination": "/school/", "permanent": true },
     { "source": "/team/", "destination": "/school/", "permanent": true },
