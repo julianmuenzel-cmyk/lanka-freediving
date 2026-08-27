@@ -309,6 +309,41 @@ GUIDES = [
     },
 ]
 
+GUIDE_SEO = {
+    "top-10-southern-sri-lanka": (
+        "10 Things to Do on Sri Lanka's South Coast",
+        "Galle Fort, Unawatuna beach, whales in Mirissa, and a freediving course — the best days near Lanka Freediving.",
+    ),
+    "unawatuna-travel-guide": (
+        "Unawatuna Travel Guide: Beach, Food & Freediving",
+        "How to get to Unawatuna, where to stay, what to eat, and how to plan a Molchanovs freediving course on Sri Lanka's south coast.",
+    ),
+    "galle-and-unawatuna": (
+        "Galle Fort & Unawatuna Day Trip Guide",
+        "How to combine Galle Fort with Unawatuna beach and a freediving course. Fifteen minutes apart on Sri Lanka's south coast.",
+    ),
+    "best-time-freediving-sri-lanka": (
+        "Best Time for Freediving in Sri Lanka (Nov–April)",
+        "South-coast season is November to April. Month-by-month water, weather, and when Lanka Freediving is open in Unawatuna.",
+    ),
+    "freediving-unawatuna": (
+        "Freediving in Unawatuna: Courses, Sites & Season",
+        "Why Unawatuna works for freediving, which Molchanovs course to take, and how to book small-group training in Sri Lanka.",
+    ),
+    "molchanovs-courses-explained": (
+        "Molchanovs Discover vs Wave 1 vs Wave 2",
+        "Which Molchanovs course to take in Sri Lanka: half-day Discover, 3-day Wave 1, or 4-day Wave 2. Depth, time, and who each is for.",
+    ),
+    "freediving-vs-scuba-sri-lanka": (
+        "Freediving vs Scuba Diving in Sri Lanka",
+        "Compare training time, cost, and marine life on the south coast — and when a Molchanovs course is the better fit.",
+    ),
+    "south-coast-7-day-itinerary": (
+        "7-Day Sri Lanka South Coast Itinerary",
+        "A one-week plan: Galle, Unawatuna freediving, Mirissa, and Weligama — built around a Molchanovs course.",
+    ),
+}
+
 LOCAL_BUSINESS = {
     "@context": "https://schema.org",
     "@type": ["SportsActivityLocation", "LocalBusiness"],
@@ -317,6 +352,7 @@ LOCAL_BUSINESS = {
     "url": SITE,
     "email": "hello@lankafreediving.com",
     "image": f"{SITE}/assets/og-default.jpg",
+    "logo": f"{SITE}/icon-192.png",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Unawatuna",
@@ -349,10 +385,17 @@ def seo_head(title: str, description: str, canonical_path: str, schema_extra: li
   <meta property="og:image" content="{SITE}/assets/og-default.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Freediver on the line in Unawatuna, Sri Lanka">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:site_name" content="Lanka Freediving">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">{schema_blocks}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDYRTZ7WJS"></script>
   <script>
@@ -449,17 +492,18 @@ def guide_page(g: dict) -> str:
             ],
         },
     ]
-    head = seo_head(g["title"], g["description"], canonical, schema)
+    seo_title, seo_desc = GUIDE_SEO.get(g["slug"], (g["title"], g["description"]))
+    head = seo_head(seo_title, seo_desc, canonical, schema)
     img_path, img_alt = g["image"]
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{g["title"]} | Lanka Freediving</title>
-  <meta name="description" content="{g["description"]}">
-  <meta property="og:title" content="{g["title"]} | Lanka Freediving">
-  <meta property="og:description" content="{g["description"]}">
+  <title>{seo_title}</title>
+  <meta name="description" content="{seo_desc}">
+  <meta property="og:title" content="{seo_title}">
+  <meta property="og:description" content="{seo_desc}">
   <meta property="og:type" content="article">
 {head}
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -553,8 +597,8 @@ def guides_index() -> str:
         }
     ]
     head = seo_head(
-        "Guides — Sri Lanka & Unawatuna | Lanka Freediving",
-        "Travel guides, freediving tips, and south coast itineraries for Unawatuna and Galle, Sri Lanka.",
+        "Sri Lanka Freediving & Unawatuna Guides | Lanka Freediving",
+        "When to go, how to get there, course comparisons, and a 7-day south-coast itinerary — written from a Molchanovs school in Unawatuna.",
         "/guides/",
         schema,
     )
@@ -563,10 +607,10 @@ def guides_index() -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guides — Sri Lanka & Unawatuna | Lanka Freediving</title>
-  <meta name="description" content="Travel guides, freediving tips, and south coast itineraries for Unawatuna and Galle, Sri Lanka.">
-  <meta property="og:title" content="Guides — Sri Lanka & Unawatuna | Lanka Freediving">
-  <meta property="og:description" content="Travel guides, freediving tips, and south coast itineraries for Unawatuna and Galle, Sri Lanka.">
+  <title>Sri Lanka Freediving & Unawatuna Guides | Lanka Freediving</title>
+  <meta name="description" content="When to go, how to get there, course comparisons, and a 7-day south-coast itinerary — written from a Molchanovs school in Unawatuna.">
+  <meta property="og:title" content="Sri Lanka Freediving & Unawatuna Guides | Lanka Freediving">
+  <meta property="og:description" content="When to go, how to get there, course comparisons, and a 7-day south-coast itinerary — written from a Molchanovs school in Unawatuna.">
   <meta property="og:type" content="website">
 {head}
   <link rel="preconnect" href="https://fonts.googleapis.com">

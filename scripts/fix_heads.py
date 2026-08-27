@@ -11,44 +11,44 @@ SITE = "https://lankafreediving.com"
 
 META = {
     "index.html": {
-        "title": "Lanka Freediving — Record Sleeve | Freediving Sri Lanka, Unawatuna",
-        "description": "Molchanovs freediving Sri Lanka in Unawatuna. Small-group courses, a week-long retreat, and expeditions — framed like a crate of record sleeves.",
+        "title": "Freediving in Unawatuna, Sri Lanka | Lanka Freediving",
+        "description": "Molchanovs freediving courses in Unawatuna. Small groups of 4, Discover to Wave 2, November to April. Warm water, one instructor.",
         "path": "/",
         "schema": "local",
     },
     "courses/index.html": {
-        "title": "Freediving Courses in Sri Lanka | Lanka Freediving | Unawatuna",
-        "description": "Molchanovs freediving Sri Lanka in Unawatuna: Discover, Wave 1, Wave 2, and advanced coaching. Small groups of 4.",
+        "title": "Freediving Courses in Unawatuna | Lanka Freediving",
+        "description": "Molchanovs Discover, Wave 1, and Wave 2 in Unawatuna. Groups of 4, from €120. Open November–April on Sri Lanka's south coast.",
         "path": "/courses/",
         "schema": "courses",
     },
     "retreat/index.html": {
-        "title": "5-Day Freediving Retreat in Sri Lanka | Lanka Freediving",
-        "description": "Freediving Sri Lanka retreat in Unawatuna: five days of breathwork, pool, open water, and Molchanovs certification. From €900.",
+        "title": "5-Day Freediving Retreat in Unawatuna | Lanka Freediving",
+        "description": "Five days of breathwork, pool, and open water in Unawatuna. Max 8 guests, boutique hotel, Molchanovs certification. From €900.",
         "path": "/retreat/",
         "schema": None,
     },
     "expedition/index.html": {
-        "title": "Freediving Expeditions — Salty Tracks & Sri Lanka | Lanka Freediving",
-        "description": "Molchanovs freediving Sri Lanka expeditions and a Batanta Island trip with Salty Tracks. Certified divers, small groups, remote water.",
+        "title": "Freediving Expeditions | Sri Lanka & Batanta | Lanka Freediving",
+        "description": "Multi-day trips for certified freedivers: seasonal Sri Lanka reefs and Batanta Island with Salty Tracks.",
         "path": "/expedition/",
         "schema": None,
     },
     "school/index.html": {
-        "title": "The School | Lanka Freediving | Unawatuna Sri Lanka",
-        "description": "Lanka Freediving is a Molchanovs school in Unawatuna, Sri Lanka. Small groups, one instructor, November to April.",
+        "title": "Molchanovs Freediving School in Unawatuna | Lanka Freediving",
+        "description": "A small Molchanovs school in Unawatuna, Sri Lanka. One instructor, groups of four, November to April.",
         "path": "/school/",
         "schema": "local",
     },
     "faq/index.html": {
-        "title": "FAQ | Lanka Freediving | Unawatuna Sri Lanka",
-        "description": "Freediving courses in Unawatuna: safety, what to bring, deposits, and how to book with Lanka Freediving.",
+        "title": "Freediving Course FAQ | Unawatuna, Sri Lanka",
+        "description": "Safety, what to bring, deposits, and how to book Molchanovs courses with Lanka Freediving in Unawatuna.",
         "path": "/faq/",
         "schema": "faq",
     },
     "contact/index.html": {
-        "title": "Get in touch | Lanka Freediving | Unawatuna",
-        "description": "Message Lanka Freediving about Molchanovs courses, the retreat, or expeditions in Unawatuna. We reply within 24 hours.",
+        "title": "Book a Freediving Course in Unawatuna | Lanka Freediving",
+        "description": "Ask about Molchanovs courses, the 5-day retreat, or expeditions in Unawatuna. We reply within 24 hours.",
         "path": "/contact/",
         "schema": None,
     },
@@ -62,6 +62,7 @@ LOCAL_BUSINESS = {
     "url": SITE,
     "email": "hello@lankafreediving.com",
     "image": f"{SITE}/assets/og-default.jpg",
+    "logo": f"{SITE}/icon-192.png",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Unawatuna",
@@ -139,11 +140,18 @@ def build_head(meta: dict, css_href: str) -> str:
   <meta property="og:image" content="{SITE}/assets/og-default.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Freediver on the line in Unawatuna, Sri Lanka">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:site_name" content="Lanka Freediving">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{desc}">
+  <meta name="robots" content="max-image-preview:large">
   <link rel="canonical" href="{url}">
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">{schema_lines}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDYRTZ7WJS"></script>
   <script>
