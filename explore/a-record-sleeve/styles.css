@@ -373,6 +373,14 @@
       margin: 1rem 0;
     }
     .course-copy { font-size: 1.05rem; max-width: 28ch; }
+    .course-choice { max-width: 42ch; font-size: 1.05rem; margin: 0; }
+    .home-facts p { max-width: 42ch; }
+    .home-facts-list { max-width: 36ch; margin: 1rem 0 1.5rem; }
+    .home-faq { max-width: 42ch; margin: 0 0 1.25rem; }
+    .home-faq details { border-bottom: 1px solid var(--fg); padding: 0.85rem 0; }
+    .home-faq summary { cursor: pointer; font-weight: 600; list-style: none; }
+    .home-faq summary::-webkit-details-marker { display: none; }
+    .home-faq details p { margin-top: 0.6rem; max-width: 38ch; }
 
     .steps {
       display: grid;
