@@ -18,7 +18,7 @@ META = {
     },
     "courses/index.html": {
         "title": "Freediving Courses in Unawatuna | Lanka Freediving",
-        "description": "Molchanovs Discover, Wave 1, and Wave 2 in Unawatuna. Groups of 4, from €120. Open November–April on Sri Lanka's south coast.",
+        "description": "Molchanovs Discover, Wave 1, and Wave 2 in Unawatuna. Groups of 4, from €150. Open November–April on Sri Lanka's south coast.",
         "path": "/courses/",
         "schema": "courses",
     },
@@ -104,7 +104,7 @@ def courses_schema():
                 "offers": {"@type": "Offer", "price": price, "priceCurrency": "EUR"},
             }
             for name, desc, price in [
-                ("Discover Freediving", "Half-day introduction to freediving in Unawatuna.", "120"),
+                ("Discover Freediving", "Half-day introduction to freediving in Unawatuna.", "150"),
                 ("Molchanovs Wave 1", "3-day freediving certification course.", "350"),
                 ("Molchanovs Wave 2", "4-day advanced freediving certification.", "450"),
             ]

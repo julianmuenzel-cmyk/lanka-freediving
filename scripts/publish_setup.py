@@ -84,7 +84,7 @@ GUIDES = [
             <tbody>
               <tr><td>Focus</td><td>Freediving as a sport and skill</td><td>Recreational intro, scuba-adjacent</td></tr>
               <tr><td>Entry course</td><td>Wave 1 — 3 days, certification</td><td>Freediver — often 2–3 days</td></tr>
-              <tr><td>Try-it session</td><td>Discover, half day, €120</td><td>Basic Freediver / try dive</td></tr>
+              <tr><td>Try-it session</td><td>Discover, half day, €150</td><td>Basic Freediver / try dive</td></tr>
               <tr><td>Group size here</td><td>Maximum 4</td><td>Varies by shop</td></tr>
               <tr><td>Where we run</td><td>Unawatuna, November–April</td><td>South in season; some shops move east in monsoon</td></tr>
             </tbody>
@@ -95,14 +95,14 @@ GUIDES = [
           <h2>Can you mix them later?</h2>
           <p>Skills transfer more than cards. A solid Wave 1 student is not starting from zero at a PADI shop, and the reverse is also true — but agencies do not automatically cross-certify. If you already hold PADI Freediver and want Wave 2 with us, <a href="../../contact/">message us</a> with your card and we will place you honestly.</p>
           <h2>Price in Unawatuna</h2>
-          <p>Our Molchanovs prices are public: Discover €120, Wave 1 €350, Wave 2 €450. Full numbers and what is included: <a href="../freediving-course-cost-sri-lanka/">how much a freediving course costs</a>.</p>
+          <p>Our Molchanovs prices are public: Discover €150, Wave 1 €350, Wave 2 €450. Full numbers and what is included: <a href="../freediving-course-cost-sri-lanka/">how much a freediving course costs</a>.</p>
         """,
         "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "freediving-course-cost-sri-lanka"],
     },
     {
         "slug": "freediving-course-cost-sri-lanka",
         "title": "How Much a Freediving Course Costs in Sri Lanka",
-        "description": "Molchanovs course prices in Unawatuna: Discover €120, Wave 1 €350, Wave 2 €450. What is included, deposits, and how we compare.",
+        "description": "Molchanovs course prices in Unawatuna: Discover €150, Wave 1 €350, Wave 2 €450. What is included, deposits, and how we compare.",
         "hero_pair": "pair-yellow",
         "caption": "Prices",
         "h1": "The numbers. No drip.",
@@ -114,7 +114,7 @@ GUIDES = [
           <table class="data-table">
             <thead><tr><th>Course</th><th>Time</th><th>Price</th><th>Certification</th></tr></thead>
             <tbody>
-              <tr><td>Discover Freediving</td><td>Half day</td><td>€120</td><td>None — experience only</td></tr>
+              <tr><td>Discover Freediving</td><td>Half day</td><td>€150</td><td>None — experience only</td></tr>
               <tr><td>Molchanovs Wave 1</td><td>3 days</td><td>€350</td><td>Wave 1, 12–20 m</td></tr>
               <tr><td>Molchanovs Wave 2</td><td>4 days</td><td>€450</td><td>Wave 2, 24–30 m</td></tr>
               <tr><td>5-day retreat</td><td>5 days</td><td>From €900</td><td>Wave 1 or 2, plus hotel and meals</td></tr>
@@ -136,7 +136,7 @@ GUIDES = [
           <h2>Compared with PADI in town</h2>
           <p>PADI Freediver in Unawatuna is often in a similar euro band, sometimes advertised cheaper before materials and certification fees. Always ask what the total is. We publish a single number. Context: <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
           <h2>First time? Start smaller</h2>
-          <p>If you are not ready to spend three days, Discover is €120. Many guests book Wave 1 after that. Read <a href="../first-freedive-unawatuna/">your first freedive in Unawatuna</a> if you are nervous about depth or swimming.</p>
+          <p>If you are not ready to spend three days, Discover is €150. Many guests book Wave 1 after that. Read <a href="../first-freedive-unawatuna/">your first freedive in Unawatuna</a> if you are nervous about depth or swimming.</p>
           <p><a href="../../contact/">Get in touch</a> with dates — we confirm within 24 hours.</p>
         """,
         "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "molchanovs-vs-padi-sri-lanka"],
@@ -153,7 +153,7 @@ GUIDES = [
         "body": """
           <p>Most people who message us have the same fear: <em>I will panic, I cannot hold my breath, I will look stupid.</em> That is normal. A first freedive in Unawatuna is not a depth attempt. It is breathing, relaxation, and a short, supervised descent with a buddy who is an instructor — not a GoPro boat.</p>
           <h2>Do you need to be a strong swimmer?</h2>
-          <p>For <strong>Discover</strong> (half day, €120): you should be comfortable in water. We are not testing laps.</p>
+          <p>For <strong>Discover</strong> (half day, €150): you should be comfortable in water. We are not testing laps.</p>
           <p>For <strong>Wave 1</strong> (3 days, €350): you must swim 200 m unassisted. That is a Molchanovs standard, not ours to waive. If you are close, say so — we will tell you honestly whether to start with Discover.</p>
           <h2>Is it scary?</h2>
           <p>The scary version of freediving is social media: blacked-out athletes, huge fins, 40 metres. That is not day one. Day one is learning to exhale slowly, to equalise before it hurts, and to turn around early. Small groups (max four) mean you are not waiting at the back of a crowd while someone else takes the line.</p>
@@ -339,7 +339,7 @@ GUIDES = [
           <p>One breath changes how you move underwater — quieter, slower, closer to turtles and reef fish without bubble noise. Proper training covers breathwork, equalisation, buddy safety, and rescue skills scuba courses never touch.</p>
           <h2>Courses we run</h2>
           <ul class="plain">
-            <li><strong>Discover</strong> — half day, €120, no certification, taste of breath-hold and pool/shallow water</li>
+            <li><strong>Discover</strong> — half day, €150, no certification, taste of breath-hold and pool/shallow water</li>
             <li><strong>Wave 1</strong> — 3 days, €350, full Molchanovs certification to 12–20 m</li>
             <li><strong>Wave 2</strong> — 4 days, €450, advanced techniques to 24–30 m</li>
             <li><strong>Retreat</strong> — 5 days immersive, from €900, certification + hotel + meals</li>
@@ -368,7 +368,7 @@ GUIDES = [
         "body": """
           <p>Molchanovs is the world's largest freediving education system — structured progression, digital certification, and standards recognised from Sri Lanka to competition circuits. At <a href="../../courses/">Lanka Freediving</a> we teach Discover, Wave 1, Wave 2, and advanced coaching.</p>
           <h2>Discover Freediving</h2>
-          <p><strong>Half day · €120 · no certification</strong></p>
+          <p><strong>Half day · €150 · no certification</strong></p>
           <p>For curious travellers — snorkellers, surfers, partners of divers. You learn breathing fundamentals and try supervised breath-holds in pool or shallow water. Good if you are unsure about a full course.</p>
           <h2>Wave 1</h2>
           <p><strong>3 days · €350 · Molchanovs Wave 1 certification</strong></p>
@@ -410,7 +410,7 @@ GUIDES = [
           <h2>Training time</h2>
           <p>A Discover freediving session is half a day. Molchanovs Wave 1 is three days. Open Water scuba is typically three to four days as well — similar commitment for entry certification, but skills do not transfer automatically.</p>
           <h2>Cost in Sri Lanka</h2>
-          <p>Discover freediving from €120; Wave 1 from €350 at Lanka Freediving. Scuba fun dives and courses vary by shop — compare what is included (gear, boat, park fees).</p>
+          <p>Discover freediving from €150; Wave 1 from €350 at Lanka Freediving. Scuba fun dives and courses vary by shop — compare what is included (gear, boat, park fees).</p>
           <h2>Can you do both?</h2>
           <p>Yes, on a long trip — but not usually the same day. Freediving after scuba requires careful scheduling because of residual nitrogen; we advise separating them by 24 hours or planning freediving first.</p>
           <h2>Which fits you?</h2>
@@ -458,7 +458,7 @@ GUIDE_SEO = {
     ),
     "freediving-course-cost-sri-lanka": (
         "How Much a Freediving Course Costs in Sri Lanka",
-        "Molchanovs prices in Unawatuna: Discover €120, Wave 1 €350, Wave 2 €450. What is included, deposits, and how to budget.",
+        "Molchanovs prices in Unawatuna: Discover €150, Wave 1 €350, Wave 2 €450. What is included, deposits, and how to budget.",
     ),
     "first-freedive-unawatuna": (
         "Your First Freedive in Unawatuna (Beginners)",
@@ -869,7 +869,7 @@ def courses_schema() -> list:
                 "offers": {"@type": "Offer", "price": price, "priceCurrency": "EUR"},
             }
             for name, desc, price in [
-                ("Discover Freediving", "Half-day introduction to freediving in Unawatuna.", "120"),
+                ("Discover Freediving", "Half-day introduction to freediving in Unawatuna.", "150"),
                 ("Molchanovs Wave 1", "3-day freediving certification course.", "350"),
                 ("Molchanovs Wave 2", "4-day advanced freediving certification.", "450"),
             ]
@@ -914,7 +914,7 @@ def write_llms() -> None:
         - 15 minutes from Galle Fort, ~2.5 hours from Colombo airport
 
         ## Services
-        - Discover Freediving (half day, €120)
+        - Discover Freediving (half day, €150)
         - Molchanovs Wave 1 (3 days, €350)
         - Molchanovs Wave 2 (4 days, €450)
         - 5-day freediving retreat (from €900)
@@ -955,7 +955,7 @@ def write_llms() -> None:
         Julian — Molchanovs instructor, Evolution Spearfishing instructor, certified competition safety diver.
 
         COURSES AND PRICING (EUR, 2026)
-        Discover Freediving: half day, €120, no certification, max 4 students
+        Discover Freediving: half day, €150, no certification, max 4 students
         Molchanovs Wave 1: 3 days, €350, certification to 12–20 m, swim 200 m required
         Molchanovs Wave 2: 4 days, €450, certification to 24–30 m, Wave 1 prerequisite
         Wave 2+ / advanced coaching: flexible, price on request
