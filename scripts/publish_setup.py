@@ -16,6 +16,12 @@ PUBLIC = ROOT / "public"
 SITE = "https://lankafreediving.com"
 TODAY = date.today().isoformat()
 
+DEFINITION_LEAD = (
+    "Lanka Freediving is a Molchanovs-certified freediving school in Unawatuna, Sri Lanka, "
+    "running Discover, Wave 1, and Wave 2 courses in groups of four, November through April."
+)
+DEFINITION_LEAD_HTML = f'<p class="definition-lead"><strong>{DEFINITION_LEAD}</strong></p>'
+
 SVG_SYMBOLS = """  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
     <symbol id="motif-wave" viewBox="0 0 800 70" fill="none">
       <path d="M-6 38 C 36 10, 58 56, 98 31 S 168 4, 208 41 S 278 62, 326 24 S 402 2, 444 39 S 524 66, 572 27 S 650 6, 698 42 S 762 58, 808 33" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
@@ -73,12 +79,13 @@ GUIDES = [
         "subtitle": "PADI shops are everywhere. Molchanovs is a training system — that is the difference.",
         "image": ("photos/julian-line.jpg", "Molchanovs line training in Unawatuna, Sri Lanka"),
         "body": """
-          <p>If you search “freediving Sri Lanka” you will mostly find PADI. That is not a slight — PADI is the largest dive organisation in the world, and Unawatuna has long-running PADI shops. <a href="../../school/">Lanka Freediving</a> is a Molchanovs school. This page is the honest split so you book the course that matches what you want, not the logo you recognised first.</p>
-          <h2>The short version</h2>
+          <p>If you search “freediving Sri Lanka” you will mostly find PADI. That is not a slight — PADI is the largest dive organisation in the world, and Unawatuna has long-running PADI shops. This page is the honest split so you book the course that matches what you want, not the logo you recognised first.</p>
+          <h2>What is the difference between Molchanovs and PADI freediving in Sri Lanka?</h2>
+          <p><strong>PADI is recreational and easy to find; Molchanovs is a freediving-only athlete-built progression — and Lanka Freediving teaches Molchanovs only.</strong></p>
           <p><strong>PADI Freediver</strong> is a recreational pathway. It is familiar if you already scuba, easy to find on the south and east coasts, and designed to get you in the water with a standardised syllabus.</p>
           <p><strong>Molchanovs</strong> is a freediving-only education system built by athletes. The Waves are a progression: breathwork, equalisation, rescue, and depth on a line — closer to how serious freedivers actually train. Certification is digital and recognised worldwide in the Molchanovs network.</p>
-          <p>We teach Molchanovs. We do not teach PADI. If you want PADI, book a PADI shop. If you want small-group Molchanovs coaching in Unawatuna, that is us.</p>
-          <h2>What actually differs in the water</h2>
+          <p>We do not teach PADI. If you want PADI, book a PADI shop. If you want small-group Molchanovs coaching in Unawatuna, that is us.</p>
+          <h2>What actually differs in the water?</h2>
           <table class="data-table">
             <thead><tr><th></th><th>Molchanovs (us)</th><th>PADI (typical shop)</th></tr></thead>
             <tbody>
@@ -89,13 +96,13 @@ GUIDES = [
               <tr><td>Where we run</td><td>Unawatuna, November–April</td><td>South in season; some shops move east in monsoon</td></tr>
             </tbody>
           </table>
-          <h2>Which should you book?</h2>
-          <p>Book PADI if you already collect PADI cards, you want the most widely recognised recreational logo, or you are on the east coast outside our season.</p>
-          <p>Book Molchanovs if you care about technique, you might continue to Wave 2 or coaching, or you want a school that only teaches freediving. Read <a href="../molchanovs-courses-explained/">Discover vs Wave 1 vs Wave 2</a> for depth and time.</p>
-          <h2>Can you mix them later?</h2>
-          <p>Skills transfer more than cards. A solid Wave 1 student is not starting from zero at a PADI shop, and the reverse is also true — but agencies do not automatically cross-certify. If you already hold PADI Freediver and want Wave 2 with us, <a href="../../contact/">message us</a> with your card and we will place you honestly.</p>
-          <h2>Price in Unawatuna</h2>
-          <p>Our Molchanovs prices are public: Discover €150, Wave 1 €350, Wave 2 €450. Full numbers and what is included: <a href="../freediving-course-cost-sri-lanka/">how much a freediving course costs</a>.</p>
+          <h2>Should I book Molchanovs or PADI in Unawatuna?</h2>
+          <p><strong>Book PADI</strong> if you already collect PADI cards, you want the most widely recognised recreational logo, or you are on the east coast outside our season.</p>
+          <p><strong>Book Molchanovs</strong> if you care about technique, you might continue to Wave 2 or coaching, or you want a school that only teaches freediving. Read <a href="../molchanovs-courses-explained/">Discover vs Wave 1 vs Wave 2</a> for depth and time.</p>
+          <h2>Can you mix Molchanovs and PADI certifications later?</h2>
+          <p><strong>Skills transfer more than cards.</strong> A solid Wave 1 student is not starting from zero at a PADI shop, and the reverse is also true — but agencies do not automatically cross-certify. If you already hold PADI Freediver and want Wave 2 with us, <a href="../../contact/">message us</a> with your card and we will place you honestly.</p>
+          <h2>How much do Molchanovs courses cost in Unawatuna?</h2>
+          <p><strong>Discover is €150, Wave 1 is €350, and Wave 2 is €450.</strong> Full numbers and what is included: <a href="../freediving-course-cost-sri-lanka/">how much a freediving course costs</a>.</p>
         """,
         "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "freediving-course-cost-sri-lanka"],
     },
@@ -109,8 +116,9 @@ GUIDES = [
         "subtitle": "Public prices, what they include, and how to budget a week in Unawatuna.",
         "image": ("photos/julian-boat.jpg", "Freediving boat in Unawatuna, Sri Lanka"),
         "body": """
-          <p>Freediving course prices in Sri Lanka vary by agency, group size, and whether gear and boat are included. These are <strong>Lanka Freediving</strong> prices for the 2026 season in Unawatuna. They are the same numbers on our <a href="../../courses/">courses page</a> — this article is for people who search “how much” before they click Book.</p>
-          <h2>Course prices (EUR)</h2>
+          <p>Freediving course prices in Sri Lanka vary by agency, group size, and whether gear and boat are included. These are Lanka Freediving prices for the 2026 season in Unawatuna — the same numbers on our <a href="../../courses/">courses page</a>.</p>
+          <h2>How much does a Molchanovs freediving course cost in Sri Lanka?</h2>
+          <p><strong>Discover is €150 (half day), Wave 1 is €350 (3 days), and Wave 2 is €450 (4 days) at Lanka Freediving in Unawatuna — gear, boat, and Molchanovs certification fees included on Wave courses.</strong></p>
           <table class="data-table">
             <thead><tr><th>Course</th><th>Time</th><th>Price</th><th>Certification</th></tr></thead>
             <tbody>
@@ -121,7 +129,8 @@ GUIDES = [
             </tbody>
           </table>
           <p>Maximum four students on courses. Retreat is max eight guests. Advanced coaching is priced on request.</p>
-          <h2>What is included</h2>
+          <h2>What is included in a freediving course price?</h2>
+          <p><strong>All gear, pool and open-water sessions, boat when we need it, online theory for Wave courses, and underwater photos on Wave courses.</strong></p>
           <ul class="plain">
             <li>All gear: wetsuit, long fins, mask, snorkel, weights, lanyard</li>
             <li>Pool and open-water sessions, boat when we need it</li>
@@ -129,14 +138,14 @@ GUIDES = [
             <li>Underwater photos on Wave courses</li>
           </ul>
           <p>Not included in a standard course: hotel, meals, airport transfer. Those sit in the <a href="../../retreat/">retreat</a> package.</p>
-          <h2>Deposit and cancellation</h2>
-          <p>30% deposit to hold a course date (50% for retreat and expeditions). Balance on day one. More than 14 days before start: deposit refunded. Inside 14 days: we transfer you to another date in the same season. Weather cancellations are rescheduled or refunded — we do not run unsafe sessions to keep a booking.</p>
-          <h2>Budget around the course</h2>
-          <p>Unawatuna guesthouses start cheap on the beach road; boutique rooms cost more on the headland. Tuk-tuks are short money. Food is inexpensive if you eat local. A Wave 1 week is course + 4–5 nights + food + a Galle afternoon — not a €2,000 resort week unless you choose that hotel.</p>
-          <h2>Compared with PADI in town</h2>
-          <p>PADI Freediver in Unawatuna is often in a similar euro band, sometimes advertised cheaper before materials and certification fees. Always ask what the total is. We publish a single number. Context: <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
-          <h2>First time? Start smaller</h2>
-          <p>If you are not ready to spend three days, Discover is €150. Many guests book Wave 1 after that. Read <a href="../first-freedive-unawatuna/">your first freedive in Unawatuna</a> if you are nervous about depth or swimming.</p>
+          <h2>What deposit do I pay to book a course?</h2>
+          <p><strong>30% deposit to hold a course date (50% for retreat and expeditions).</strong> Balance on day one. More than 14 days before start: deposit refunded. Inside 14 days: we transfer you to another date in the same season. Weather cancellations are rescheduled or refunded — we do not run unsafe sessions to keep a booking.</p>
+          <h2>How much should I budget for a week in Unawatuna?</h2>
+          <p><strong>A Wave 1 week is course plus 4–5 nights, food, and a Galle afternoon — not a €2,000 resort week unless you choose that hotel.</strong> Guesthouses start cheap on the beach road; boutique rooms cost more on the headland. Tuk-tuks are short money. Food is inexpensive if you eat local.</p>
+          <h2>Is Molchanovs cheaper than PADI in Unawatuna?</h2>
+          <p><strong>Often in a similar euro band — always ask PADI shops for the total price including materials and certification fees.</strong> We publish a single number. Context: <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
+          <h2>Which course should a first-timer book?</h2>
+          <p><strong>Not ready for three days? Start with Discover at €150.</strong> Many guests book Wave 1 after that. Read <a href="../first-freedive-unawatuna/">your first freedive in Unawatuna</a> if you are nervous about depth or swimming.</p>
           <p><a href="../../contact/">Get in touch</a> with dates — we confirm within 24 hours.</p>
         """,
         "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "molchanovs-vs-padi-sri-lanka"],
@@ -152,24 +161,24 @@ GUIDES = [
         "image": ("photos/session-sun.jpg", "Beginner freediving session in warm Unawatuna water"),
         "body": """
           <p>Most people who message us have the same fear: <em>I will panic, I cannot hold my breath, I will look stupid.</em> That is normal. A first freedive in Unawatuna is not a depth attempt. It is breathing, relaxation, and a short, supervised descent with a buddy who is an instructor — not a GoPro boat.</p>
-          <h2>Do you need to be a strong swimmer?</h2>
-          <p>For <strong>Discover</strong> (half day, €150): you should be comfortable in water. We are not testing laps.</p>
-          <p>For <strong>Wave 1</strong> (3 days, €350): you must swim 200 m unassisted. That is a Molchanovs standard, not ours to waive. If you are close, say so — we will tell you honestly whether to start with Discover.</p>
-          <h2>Is it scary?</h2>
-          <p>The scary version of freediving is social media: blacked-out athletes, huge fins, 40 metres. That is not day one. Day one is learning to exhale slowly, to equalise before it hurts, and to turn around early. Small groups (max four) mean you are not waiting at the back of a crowd while someone else takes the line.</p>
-          <h2>What a first session looks like</h2>
+          <h2>Do you need to be a strong swimmer to freedive in Unawatuna?</h2>
+          <p><strong>For Discover (half day, €150): water comfort is enough. For Wave 1 (3 days, €350): you must swim 200 m unassisted.</strong> That is a Molchanovs standard, not ours to waive. If you are close, say so — we will tell you honestly whether to start with Discover.</p>
+          <h2>Is freediving scary for beginners?</h2>
+          <p><strong>Day one is not the social-media version — no deep line, no blackout aesthetics.</strong> You learn to exhale slowly, equalise before it hurts, and turn around early. Small groups (max four) mean you are not waiting at the back of a crowd while someone else takes the line.</p>
+          <h2>What happens on your first freediving session in Unawatuna?</h2>
+          <p><strong>You learn breathing on land, practise in pool or sheltered water, and only add depth across later days if you booked Wave 1.</strong></p>
           <ol class="plain">
             <li>Breathing and body scan on land — not “take a huge gulp.”</li>
             <li>Pool or sheltered water: float, duck dive, recover on the surface with a buddy.</li>
             <li>If you booked Wave 1, later days add the line, Frenzel equalisation, and open water to a depth you have earned — typically well inside 12–20 m by the end of the course, not on hour one.</li>
           </ol>
           <p>Gear is provided. Bring swimwear, a towel, reef-safe sunscreen. Details: <a href="../../faq/">FAQ</a>.</p>
-          <h2>How deep on day one?</h2>
-          <p>Discover stays shallow and supervised. Wave 1 builds across three days. Nobody is dropped on a deep line to “see if you can.” Depth is a by-product of equalisation and calm — we stop when either is missing.</p>
-          <h2>What you might see</h2>
-          <p>Warm water (27–30°C in season), reef fish, sometimes turtles on calm mornings. Read <a href="../turtles-freediving-unawatuna/">turtles and marine life</a> so you know the rules before you get excited and reach.</p>
-          <h2>Which course to book</h2>
-          <p>One free morning: Discover. Three days and a card you can take home: Wave 1. Already certified and hunting depth: Wave 2. Comparison: <a href="../molchanovs-courses-explained/">Molchanovs courses explained</a> and <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
+          <h2>How deep will you go on day one?</h2>
+          <p><strong>Discover stays shallow and supervised; Wave 1 builds across three days.</strong> Nobody is dropped on a deep line to “see if you can.” Depth is a by-product of equalisation and calm — we stop when either is missing.</p>
+          <h2>What marine life might you see?</h2>
+          <p><strong>Warm water (27–30°C in season), reef fish, and sometimes turtles on calm mornings.</strong> Read <a href="../turtles-freediving-unawatuna/">turtles and marine life</a> so you know the rules before you get excited and reach.</p>
+          <h2>Which freediving course should you book?</h2>
+          <p><strong>One free morning: Discover. Three days and a card: Wave 1. Already certified: Wave 2.</strong> Comparison: <a href="../molchanovs-courses-explained/">Molchanovs courses explained</a> and <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
           <p>Still unsure? <a href="../../contact/">Tell us your swimming background and dates</a>. We would rather put you on Discover than rush a Wave 1.</p>
         """,
         "related": ["molchanovs-courses-explained", "turtles-freediving-unawatuna", "freediving-course-cost-sri-lanka"],
@@ -703,6 +712,7 @@ def guide_page(g: dict) -> str:
       <figure class="guide-figure">
         <img src="../../../assets/{img_path}" alt="{img_alt}" loading="lazy">
       </figure>
+      {DEFINITION_LEAD_HTML}
       {g["body"].strip()}
       <h2>Related guides</h2>
       <ul class="plain">{related_html}</ul>
@@ -901,9 +911,9 @@ def write_llms() -> None:
     (PUBLIC / "llms.txt").write_text(textwrap.dedent(f"""\
         # Lanka Freediving
 
-        > Molchanovs freediving school in Unawatuna, Sri Lanka. Small groups, warm water, November–April.
+        > {DEFINITION_LEAD}
 
-        Lanka Freediving teaches Molchanovs freediving courses on Sri Lanka's south coast. Maximum four students per course. Instructor Julian is a Molchanovs instructor and competition safety diver.
+        Instructor Julian is a Molchanovs instructor and competition safety diver.
 
         ## Season
         - Open: November through April (dry season, south coast)

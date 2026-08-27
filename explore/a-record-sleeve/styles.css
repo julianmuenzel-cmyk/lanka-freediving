@@ -375,6 +375,7 @@
     .course-copy { font-size: 1.05rem; max-width: 28ch; }
     .course-choice { max-width: 42ch; font-size: 1.05rem; margin: 0; }
     .home-facts p { max-width: 42ch; }
+    .definition-lead { max-width: 42ch; margin: 0 0 1rem; font-size: 1.05rem; }
     .home-facts-list { max-width: 36ch; margin: 1rem 0 1.5rem; }
     .home-faq { max-width: 42ch; margin: 0 0 1.25rem; }
     .home-faq details { border-bottom: 1px solid var(--fg); padding: 0.85rem 0; }
@@ -621,6 +622,7 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+    .photo-credit { margin-top: 0.85rem; max-width: 42ch; opacity: 0.85; }
     .day { padding: 0.9rem 0; border-top: 1px solid var(--fg); }
     .day:last-child { border-bottom: 1px solid var(--fg); }
     .day b {
