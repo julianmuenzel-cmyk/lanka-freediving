@@ -64,6 +64,148 @@ PAGES = {
 
 GUIDES = [
     {
+        "slug": "molchanovs-vs-padi-sri-lanka",
+        "title": "Molchanovs vs PADI Freediving in Sri Lanka",
+        "description": "PADI is easier to find. Molchanovs is what we teach. How the two systems differ for a course in Unawatuna.",
+        "hero_pair": "pair-cobalt",
+        "caption": "Compare",
+        "h1": "Same ocean. Different school.",
+        "subtitle": "PADI shops are everywhere. Molchanovs is a training system — that is the difference.",
+        "image": ("photos/julian-line.jpg", "Molchanovs line training in Unawatuna, Sri Lanka"),
+        "body": """
+          <p>If you search “freediving Sri Lanka” you will mostly find PADI. That is not a slight — PADI is the largest dive organisation in the world, and Unawatuna has long-running PADI shops. <a href="../../school/">Lanka Freediving</a> is a Molchanovs school. This page is the honest split so you book the course that matches what you want, not the logo you recognised first.</p>
+          <h2>The short version</h2>
+          <p><strong>PADI Freediver</strong> is a recreational pathway. It is familiar if you already scuba, easy to find on the south and east coasts, and designed to get you in the water with a standardised syllabus.</p>
+          <p><strong>Molchanovs</strong> is a freediving-only education system built by athletes. The Waves are a progression: breathwork, equalisation, rescue, and depth on a line — closer to how serious freedivers actually train. Certification is digital and recognised worldwide in the Molchanovs network.</p>
+          <p>We teach Molchanovs. We do not teach PADI. If you want PADI, book a PADI shop. If you want small-group Molchanovs coaching in Unawatuna, that is us.</p>
+          <h2>What actually differs in the water</h2>
+          <table class="data-table">
+            <thead><tr><th></th><th>Molchanovs (us)</th><th>PADI (typical shop)</th></tr></thead>
+            <tbody>
+              <tr><td>Focus</td><td>Freediving as a sport and skill</td><td>Recreational intro, scuba-adjacent</td></tr>
+              <tr><td>Entry course</td><td>Wave 1 — 3 days, certification</td><td>Freediver — often 2–3 days</td></tr>
+              <tr><td>Try-it session</td><td>Discover, half day, €120</td><td>Basic Freediver / try dive</td></tr>
+              <tr><td>Group size here</td><td>Maximum 4</td><td>Varies by shop</td></tr>
+              <tr><td>Where we run</td><td>Unawatuna, November–April</td><td>South in season; some shops move east in monsoon</td></tr>
+            </tbody>
+          </table>
+          <h2>Which should you book?</h2>
+          <p>Book PADI if you already collect PADI cards, you want the most widely recognised recreational logo, or you are on the east coast outside our season.</p>
+          <p>Book Molchanovs if you care about technique, you might continue to Wave 2 or coaching, or you want a school that only teaches freediving. Read <a href="../molchanovs-courses-explained/">Discover vs Wave 1 vs Wave 2</a> for depth and time.</p>
+          <h2>Can you mix them later?</h2>
+          <p>Skills transfer more than cards. A solid Wave 1 student is not starting from zero at a PADI shop, and the reverse is also true — but agencies do not automatically cross-certify. If you already hold PADI Freediver and want Wave 2 with us, <a href="../../contact/">message us</a> with your card and we will place you honestly.</p>
+          <h2>Price in Unawatuna</h2>
+          <p>Our Molchanovs prices are public: Discover €120, Wave 1 €350, Wave 2 €450. Full numbers and what is included: <a href="../freediving-course-cost-sri-lanka/">how much a freediving course costs</a>.</p>
+        """,
+        "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "freediving-course-cost-sri-lanka"],
+    },
+    {
+        "slug": "freediving-course-cost-sri-lanka",
+        "title": "How Much a Freediving Course Costs in Sri Lanka",
+        "description": "Molchanovs course prices in Unawatuna: Discover €120, Wave 1 €350, Wave 2 €450. What is included, deposits, and how we compare.",
+        "hero_pair": "pair-yellow",
+        "caption": "Prices",
+        "h1": "The numbers. No drip.",
+        "subtitle": "Public prices, what they include, and how to budget a week in Unawatuna.",
+        "image": ("photos/julian-boat.jpg", "Freediving boat in Unawatuna, Sri Lanka"),
+        "body": """
+          <p>Freediving course prices in Sri Lanka vary by agency, group size, and whether gear and boat are included. These are <strong>Lanka Freediving</strong> prices for the 2026 season in Unawatuna. They are the same numbers on our <a href="../../courses/">courses page</a> — this article is for people who search “how much” before they click Book.</p>
+          <h2>Course prices (EUR)</h2>
+          <table class="data-table">
+            <thead><tr><th>Course</th><th>Time</th><th>Price</th><th>Certification</th></tr></thead>
+            <tbody>
+              <tr><td>Discover Freediving</td><td>Half day</td><td>€120</td><td>None — experience only</td></tr>
+              <tr><td>Molchanovs Wave 1</td><td>3 days</td><td>€350</td><td>Wave 1, 12–20 m</td></tr>
+              <tr><td>Molchanovs Wave 2</td><td>4 days</td><td>€450</td><td>Wave 2, 24–30 m</td></tr>
+              <tr><td>5-day retreat</td><td>5 days</td><td>From €900</td><td>Wave 1 or 2, plus hotel and meals</td></tr>
+            </tbody>
+          </table>
+          <p>Maximum four students on courses. Retreat is max eight guests. Advanced coaching is priced on request.</p>
+          <h2>What is included</h2>
+          <ul class="plain">
+            <li>All gear: wetsuit, long fins, mask, snorkel, weights, lanyard</li>
+            <li>Pool and open-water sessions, boat when we need it</li>
+            <li>Online theory and exam for Wave courses</li>
+            <li>Underwater photos on Wave courses</li>
+          </ul>
+          <p>Not included in a standard course: hotel, meals, airport transfer. Those sit in the <a href="../../retreat/">retreat</a> package.</p>
+          <h2>Deposit and cancellation</h2>
+          <p>30% deposit to hold a course date (50% for retreat and expeditions). Balance on day one. More than 14 days before start: deposit refunded. Inside 14 days: we transfer you to another date in the same season. Weather cancellations are rescheduled or refunded — we do not run unsafe sessions to keep a booking.</p>
+          <h2>Budget around the course</h2>
+          <p>Unawatuna guesthouses start cheap on the beach road; boutique rooms cost more on the headland. Tuk-tuks are short money. Food is inexpensive if you eat local. A Wave 1 week is course + 4–5 nights + food + a Galle afternoon — not a €2,000 resort week unless you choose that hotel.</p>
+          <h2>Compared with PADI in town</h2>
+          <p>PADI Freediver in Unawatuna is often in a similar euro band, sometimes advertised cheaper before materials and certification fees. Always ask what the total is. We publish a single number. Context: <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
+          <h2>First time? Start smaller</h2>
+          <p>If you are not ready to spend three days, Discover is €120. Many guests book Wave 1 after that. Read <a href="../first-freedive-unawatuna/">your first freedive in Unawatuna</a> if you are nervous about depth or swimming.</p>
+          <p><a href="../../contact/">Get in touch</a> with dates — we confirm within 24 hours.</p>
+        """,
+        "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "molchanovs-vs-padi-sri-lanka"],
+    },
+    {
+        "slug": "first-freedive-unawatuna",
+        "title": "Your First Freedive in Unawatuna",
+        "description": "Is freediving scary? Do you need to be a strong swimmer? What happens on a first session in Unawatuna — depth, gear, and how we teach beginners.",
+        "hero_pair": "pair-pink",
+        "caption": "Beginners",
+        "h1": "You do not start at 20 metres.",
+        "subtitle": "First session in Unawatuna: breath, pool, then a short, supervised dip. Groups of four.",
+        "image": ("photos/session-sun.jpg", "Beginner freediving session in warm Unawatuna water"),
+        "body": """
+          <p>Most people who message us have the same fear: <em>I will panic, I cannot hold my breath, I will look stupid.</em> That is normal. A first freedive in Unawatuna is not a depth attempt. It is breathing, relaxation, and a short, supervised descent with a buddy who is an instructor — not a GoPro boat.</p>
+          <h2>Do you need to be a strong swimmer?</h2>
+          <p>For <strong>Discover</strong> (half day, €120): you should be comfortable in water. We are not testing laps.</p>
+          <p>For <strong>Wave 1</strong> (3 days, €350): you must swim 200 m unassisted. That is a Molchanovs standard, not ours to waive. If you are close, say so — we will tell you honestly whether to start with Discover.</p>
+          <h2>Is it scary?</h2>
+          <p>The scary version of freediving is social media: blacked-out athletes, huge fins, 40 metres. That is not day one. Day one is learning to exhale slowly, to equalise before it hurts, and to turn around early. Small groups (max four) mean you are not waiting at the back of a crowd while someone else takes the line.</p>
+          <h2>What a first session looks like</h2>
+          <ol class="plain">
+            <li>Breathing and body scan on land — not “take a huge gulp.”</li>
+            <li>Pool or sheltered water: float, duck dive, recover on the surface with a buddy.</li>
+            <li>If you booked Wave 1, later days add the line, Frenzel equalisation, and open water to a depth you have earned — typically well inside 12–20 m by the end of the course, not on hour one.</li>
+          </ol>
+          <p>Gear is provided. Bring swimwear, a towel, reef-safe sunscreen. Details: <a href="../../faq/">FAQ</a>.</p>
+          <h2>How deep on day one?</h2>
+          <p>Discover stays shallow and supervised. Wave 1 builds across three days. Nobody is dropped on a deep line to “see if you can.” Depth is a by-product of equalisation and calm — we stop when either is missing.</p>
+          <h2>What you might see</h2>
+          <p>Warm water (27–30°C in season), reef fish, sometimes turtles on calm mornings. Read <a href="../turtles-freediving-unawatuna/">turtles and marine life</a> so you know the rules before you get excited and reach.</p>
+          <h2>Which course to book</h2>
+          <p>One free morning: Discover. Three days and a card you can take home: Wave 1. Already certified and hunting depth: Wave 2. Comparison: <a href="../molchanovs-courses-explained/">Molchanovs courses explained</a> and <a href="../molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI</a>.</p>
+          <p>Still unsure? <a href="../../contact/">Tell us your swimming background and dates</a>. We would rather put you on Discover than rush a Wave 1.</p>
+        """,
+        "related": ["molchanovs-courses-explained", "turtles-freediving-unawatuna", "freediving-course-cost-sri-lanka"],
+    },
+    {
+        "slug": "turtles-freediving-unawatuna",
+        "title": "Turtles and Marine Life While Freediving in Unawatuna",
+        "description": "Green turtles in Unawatuna, what else you see on the reef, and how we dive so wildlife stays wild. Season: November–April.",
+        "hero_pair": "pair-turq",
+        "caption": "Wildlife",
+        "h1": "Quiet gets you closer.",
+        "subtitle": "Turtles, reef fish, and the rules: look, do not chase, do not touch.",
+        "image": ("photos/turtle.jpg", "Sea turtle in the water off Unawatuna, Sri Lanka"),
+        "body": """
+          <p>Unawatuna is not a private aquarium. It is a busy bay with boats, snorkel tours, and — on the right morning — green turtles grazing or travelling along the reef. Freediving helps because you are silent. No regulator bubbles. That is the whole trick, and it is also why you have to be more careful, not less.</p>
+          <h2>Will I see a turtle?</h2>
+          <p>Often, in season (November–April), on calm mornings. Not guaranteed. Anyone who sells a “turtle guarantee” is selling a chase. We do not chase. If a turtle is there, we stay off to the side, keep our hands in, and leave it a way out.</p>
+          <h2>What else is on the reef</h2>
+          <p>Typical south-coast rock reef and sand: parrotfish, bannerfish, lionfish, puffers, the odd moray, sometimes a ray. Coral cover here is not east-coast Nilaveli — bleaching and the 2004 tsunami still show. You come for warm water, easy access, and animals that use the bay, not for a pristine wall.</p>
+          <h2>Rules we actually use</h2>
+          <ul class="plain">
+            <li>No touching turtles, no riding, no grabbing the shell for a photo</li>
+            <li>No feeding</li>
+            <li>Reef-safe sunscreen, applied on land, not in the water</li>
+            <li>Give animals space on the line and on the reef — your turn can wait</li>
+          </ul>
+          <p>If you want a first session that is about calm, not content, start with <a href="../first-freedive-unawatuna/">your first freedive</a> or a <a href="../../courses/">Discover</a>.</p>
+          <h2>Snorkel vs freedive</h2>
+          <p>Snorkel tours stay on the surface and often cluster. A freedive course teaches you to duck-dive cleanly and recover — less thrashing, less crowding. You still share the water with other boats. We pick sites and timing around that.</p>
+          <h2>When to come</h2>
+          <p>South-coast season is November–April. That is when we run the school and when the bay is most usable. Month-by-month: <a href="../best-time-freediving-sri-lanka/">best time for freediving in Sri Lanka</a>.</p>
+          <p>Book a course, not a wildlife ticket: <a href="../../contact/">get in touch</a>.</p>
+        """,
+        "related": ["first-freedive-unawatuna", "freediving-unawatuna", "unawatuna-travel-guide"],
+    },
+    {
         "slug": "top-10-southern-sri-lanka",
         "title": "Top 10 Things to Do on Sri Lanka's South Coast",
         "description": "From Galle Fort to Mirissa whales — the best activities near Unawatuna on Sri Lanka's southern coast.",
@@ -77,7 +219,7 @@ GUIDES = [
           <h2>1. Galle Fort at golden hour</h2>
           <p>The Dutch fort is fifteen minutes from Unawatuna. Walk the ramparts, get lost in the cobblestone lanes, and eat at one of the courtyard restaurants. Go late afternoon when the light turns the walls amber and the day-trippers leave.</p>
           <h2>2. Freediving or snorkelling in Unawatuna Bay</h2>
-          <p>Warm water, reef fish, turtles on calm mornings. If you want more than a snorkel, a <a href="../courses/">Molchanovs Discover session</a> or <a href="freediving-unawatuna/">freediving guide</a> is the proper way in — one breath, no bubbles, closer to the reef.</p>
+          <p>Warm water, reef fish, turtles on calm mornings. If you want more than a snorkel, a <a href="../../courses/">Molchanovs Discover session</a> or <a href="../freediving-unawatuna/">freediving guide</a> is the proper way in — one breath, no bubbles, closer to the reef.</p>
           <h2>3. Jungle Beach and the coastal walk</h2>
           <p>A twenty-minute walk over the headland from Unawatuna brings you to a smaller cove with fewer boats. Good for a swim, a beer, and watching the fishing boats come in.</p>
           <h2>4. Mirissa whale watching (December–April)</h2>
@@ -93,9 +235,9 @@ GUIDES = [
           <h2>9. Ahangama / Midigama surf and cafés</h2>
           <p>The stretch between Unawatuna and Weligama has grown into a café-and-surf corridor. Rent a scooter, stop where it looks busy, swim where it looks empty.</p>
           <h2>10. Five-day freediving retreat</h2>
-          <p>If you have a week, structure it around water. Our <a href="../retreat/">Unawatuna retreat</a> combines daily pool and open-water sessions with accommodation and meals — Molchanovs Wave 1 or Wave 2 included. See also our <a href="south-coast-7-day-itinerary/">seven-day south coast itinerary</a>.</p>
+          <p>If you have a week, structure it around water. Our <a href="../../retreat/">Unawatuna retreat</a> combines daily pool and open-water sessions with accommodation and meals — Molchanovs Wave 1 or Wave 2 included. See also our <a href="../south-coast-7-day-itinerary/">seven-day south coast itinerary</a>.</p>
           <h2>Planning tips</h2>
-          <p>November through April is dry season on the south coast — the same window we run <a href="../school/">Lanka Freediving</a>. Shoulder months (November, April) mean fewer crowds. Peak is Christmas through January; book accommodation and courses early.</p>
+          <p>November through April is dry season on the south coast — the same window we run <a href="../../school/">Lanka Freediving</a>. Shoulder months (November, April) mean fewer crowds. Peak is Christmas through January; book accommodation and courses early.</p>
         """,
         "related": ["unawatuna-travel-guide", "galle-and-unawatuna", "south-coast-7-day-itinerary"],
     },
@@ -109,19 +251,19 @@ GUIDES = [
         "subtitle": "Everything you need before you land in the south.",
         "image": ("photos/session-sun.jpg", "Freediver descending in warm Unawatuna water"),
         "body": """
-          <p>Unawatuna is a curved bay on Sri Lanka's south coast, tucked between Galle and Mirissa. It became a traveller staple for good reason: swimmable water most of the year (in season), restaurants along the beach road, and easy day trips in every direction. It is also where we run <a href="../school/">Lanka Freediving</a> from November to April.</p>
+          <p>Unawatuna is a curved bay on Sri Lanka's south coast, tucked between Galle and Mirissa. It became a traveller staple for good reason: swimmable water most of the year (in season), restaurants along the beach road, and easy day trips in every direction. It is also where we run <a href="../../school/">Lanka Freediving</a> from November to April.</p>
           <h2>Getting there</h2>
           <p>Colombo Bandaranaike Airport (CMB) is roughly 2.5 hours by car. Pre-book a transfer or take the coastal train to Galle then a tuk-tuk — the train is slow but scenic. From Galle Fort it is fifteen minutes to Unawatuna.</p>
           <h2>Best time to visit</h2>
-          <p>Dry season on the south coast runs <strong>November through April</strong>. Sea is calmest, visibility best for diving and freediving. Monsoon pushes rain and swell to this coast from May onward — we close the school outside season. More detail in our <a href="best-time-freediving-sri-lanka/">best time for freediving</a> guide.</p>
+          <p>Dry season on the south coast runs <strong>November through April</strong>. Sea is calmest, visibility best for diving and freediving. Monsoon pushes rain and swell to this coast from May onward — we close the school outside season. More detail in our <a href="../best-time-freediving-sri-lanka/">best time for freediving</a> guide.</p>
           <h2>Where to stay</h2>
-          <p>Beach-road guesthouses suit budget travellers; boutique hotels on the headland suit couples and retreat guests. Book early for December–January. If you join our <a href="../retreat/">five-day retreat</a>, preferential hotel rates apply (property confirmed per date).</p>
+          <p>Beach-road guesthouses suit budget travellers; boutique hotels on the headland suit couples and retreat guests. Book early for December–January. If you join our <a href="../../retreat/">five-day retreat</a>, preferential hotel rates apply (property confirmed per date).</p>
           <h2>Food</h2>
           <p>Beach restaurants serve grilled fish, kottu, and curry-and-rice. Galle Fort has higher-end options. Try a proper Sri Lankan breakfast — hoppers, string hoppers, dal — at least once.</p>
           <h2>Getting around</h2>
           <p>Tuk-tuks are everywhere and cheap for short hops. Scooter rental is common; wear a helmet and go slow. For Galle, Mirissa, or Weligama, a half-day driver is often easier than multiple tuk-tuk rides.</p>
           <h2>Freediving in Unawatuna</h2>
-          <p>Water temperature is typically 27–30°C in season. Reef and sand patches sit a short boat ride out; turtles are common on calm mornings. We teach Molchanovs <a href="../courses/">Discover, Wave 1, and Wave 2</a> in groups of four maximum. Read our full <a href="freediving-unawatuna/">freediving in Unawatuna</a> guide for course fit and what to bring.</p>
+          <p>Water temperature is typically 27–30°C in season. Reef and sand patches sit a short boat ride out; turtles are common on calm mornings. We teach Molchanovs <a href="../../courses/">Discover, Wave 1, and Wave 2</a> in groups of four maximum. Read our full <a href="../freediving-unawatuna/">freediving in Unawatuna</a> guide for course fit and what to bring.</p>
           <h2>Safety and etiquette</h2>
           <p>Reef-safe sunscreen, respect temple dress codes on the pagoda hill, and do not touch marine life. Currents are usually mild in bay mornings; open-water sessions follow weather and visibility.</p>
         """,
@@ -152,7 +294,7 @@ GUIDES = [
           <h2>Beyond the fort</h2>
           <p>Don't skip the rest of Galle town if you have time — local markets and the cricket ground give a different feel from the tourist fort interior. East toward Koggala, you can combine a lake boat trip on the same day as a fort visit if you start early.</p>
           <h2>Freediving between the two</h2>
-          <p>If you have three or more days, slot a <a href="../courses/">Wave 1 course</a> in Unawatuna and use Galle for your rest days. See our <a href="top-10-southern-sri-lanka/">top ten south coast activities</a> for Mirissa, Weligama, and tea country options within an hour.</p>
+          <p>If you have three or more days, slot a <a href="../../courses/">Wave 1 course</a> in Unawatuna and use Galle for your rest days. See our <a href="../top-10-southern-sri-lanka/">top ten south coast activities</a> for Mirissa, Weligama, and tea country options within an hour.</p>
         """,
         "related": ["unawatuna-travel-guide", "top-10-southern-sri-lanka", "south-coast-7-day-itinerary"],
     },
@@ -166,7 +308,7 @@ GUIDES = [
         "subtitle": "Dry season on the south coast is freediving season.",
         "image": ("photos/session-line.jpg", "Freediver on the line in calm Sri Lankan seas"),
         "body": """
-          <p>Sri Lanka has two monsoons, which means the "best" coast depends on the month. For Unawatuna and the south, the answer is straightforward: <strong>November through April</strong>. That is when we operate <a href="../school/">Lanka Freediving</a> and when conditions are most reliable for courses and open-water sessions.</p>
+          <p>Sri Lanka has two monsoons, which means the "best" coast depends on the month. For Unawatuna and the south, the answer is straightforward: <strong>November through April</strong>. That is when we operate <a href="../../school/">Lanka Freediving</a> and when conditions are most reliable for courses and open-water sessions.</p>
           <h2>Month by month</h2>
           <p><strong>November:</strong> Season opens. Seas settle after the southwest monsoon; fewer tourists than peak. Good visibility building.</p>
           <p><strong>December–January:</strong> Peak travel. Book courses and hotels early. Calm mornings, warm water 27–29°C.</p>
@@ -176,9 +318,9 @@ GUIDES = [
           <h2>Water conditions</h2>
           <p>Expect 27–30°C water — most students fine in 3 mm or rash vest. Visibility on calm mornings often exceeds 15 m on reef sites. Afternoon wind can chop the surface; we schedule around it.</p>
           <h2>Planning your course</h2>
-          <p>Wave 1 needs three days plus theory time before arrival. Discover fits a free half-day. The <a href="../retreat/">five-day retreat</a> is best with a full week in country. Check <a href="molchanovs-courses-explained/">which Molchanovs course</a> fits your trip length.</p>
+          <p>Wave 1 needs three days plus theory time before arrival. Discover fits a free half-day. The <a href="../../retreat/">five-day retreat</a> is best with a full week in country. Check <a href="../molchanovs-courses-explained/">which Molchanovs course</a> fits your trip length.</p>
           <h2>Whales and weather</h2>
-          <p>Whale-watching off Mirissa overlaps our season (roughly December–April). Combine with freediving if you have spare days — see the <a href="top-10-southern-sri-lanka/">south coast top ten</a>.</p>
+          <p>Whale-watching off Mirissa overlaps our season (roughly December–April). Combine with freediving if you have spare days — see the <a href="../top-10-southern-sri-lanka/">south coast top ten</a>.</p>
         """,
         "related": ["freediving-unawatuna", "unawatuna-travel-guide", "molchanovs-courses-explained"],
     },
@@ -192,7 +334,7 @@ GUIDES = [
         "subtitle": "Molchanovs courses from Discover to Wave 2 in Unawatuna.",
         "image": ("photos/julian-depth.jpg", "Freediving depth session in Unawatuna, Sri Lanka"),
         "body": """
-          <p>Unawatuna is one of the most practical places in Sri Lanka to learn freediving: warm water, reef access by boat, a full tourist infrastructure, and calm mornings in season. <a href="../school/">Lanka Freediving</a> is a Molchanovs school running November–April with a maximum of four students per course.</p>
+          <p>Unawatuna is one of the most practical places in Sri Lanka to learn freediving: warm water, reef access by boat, a full tourist infrastructure, and calm mornings in season. <a href="../../school/">Lanka Freediving</a> is a Molchanovs school running November–April with a maximum of four students per course.</p>
           <h2>Why freedive here (not just snorkel)</h2>
           <p>One breath changes how you move underwater — quieter, slower, closer to turtles and reef fish without bubble noise. Proper training covers breathwork, equalisation, buddy safety, and rescue skills scuba courses never touch.</p>
           <h2>Courses we run</h2>
@@ -202,17 +344,17 @@ GUIDES = [
             <li><strong>Wave 2</strong> — 4 days, €450, advanced techniques to 24–30 m</li>
             <li><strong>Retreat</strong> — 5 days immersive, from €900, certification + hotel + meals</li>
           </ul>
-          <p>Full breakdown: <a href="../courses/">courses page</a> and <a href="molchanovs-courses-explained/">Molchanovs explained</a>.</p>
+          <p>Full breakdown: <a href="../../courses/">courses page</a> and <a href="../molchanovs-courses-explained/">Molchanovs explained</a>.</p>
           <h2>Typical day</h2>
           <p>Morning theory or breathwork, pool skills mid-morning, open water after lunch when the bay is calm. Small groups mean actual coaching time — not waiting on twelve other students.</p>
           <h2>Who teaches</h2>
           <p>Julian is a Molchanovs instructor, Evolution Spearfishing instructor, and competition safety diver. Training follows Molchanovs standards with conservative progression — depth is earned, not forced.</p>
           <h2>What to bring</h2>
-          <p>Swimwear, reef-safe sunscreen, towel. We provide wetsuits, fins, masks, and lines. Must swim 200 m for Wave 1+. More in our <a href="../faq/">FAQ</a>.</p>
+          <p>Swimwear, reef-safe sunscreen, towel. We provide wetsuits, fins, masks, and lines. Must swim 200 m for Wave 1+. More in our <a href="../../faq/">FAQ</a>.</p>
           <h2>Book</h2>
-          <p><a href="../contact/">Contact form</a>, WhatsApp, or hello@lankafreediving.com — we confirm within 24 hours. Deposit secures your date and theory access.</p>
+          <p><a href="../../contact/">Contact form</a>, WhatsApp, or hello@lankafreediving.com — we confirm within 24 hours. Deposit secures your date and theory access.</p>
         """,
-        "related": ["molchanovs-courses-explained", "best-time-freediving-sri-lanka", "freediving-vs-scuba-sri-lanka"],
+        "related": ["molchanovs-courses-explained", "first-freedive-unawatuna", "turtles-freediving-unawatuna"],
     },
     {
         "slug": "molchanovs-courses-explained",
@@ -224,7 +366,7 @@ GUIDES = [
         "subtitle": "Discover, Wave 1, or Wave 2 — what each course actually gives you.",
         "image": ("photos/julian-line.jpg", "Molchanovs instructor on the freediving line in Unawatuna"),
         "body": """
-          <p>Molchanovs is the world's largest freediving education system — structured progression, digital certification, and standards recognised from Sri Lanka to competition circuits. At <a href="../courses/">Lanka Freediving</a> we teach Discover, Wave 1, Wave 2, and advanced coaching.</p>
+          <p>Molchanovs is the world's largest freediving education system — structured progression, digital certification, and standards recognised from Sri Lanka to competition circuits. At <a href="../../courses/">Lanka Freediving</a> we teach Discover, Wave 1, Wave 2, and advanced coaching.</p>
           <h2>Discover Freediving</h2>
           <p><strong>Half day · €120 · no certification</strong></p>
           <p>For curious travellers — snorkellers, surfers, partners of divers. You learn breathing fundamentals and try supervised breath-holds in pool or shallow water. Good if you are unsure about a full course.</p>
@@ -243,12 +385,12 @@ GUIDES = [
               <tr><td>One free morning, first time</td><td>Discover</td></tr>
               <tr><td>3–4 days, want certification</td><td>Wave 1</td></tr>
               <tr><td>Already Wave 1, want depth</td><td>Wave 2</td></tr>
-              <tr><td>Full week, immersive</td><td><a href="../retreat/">Retreat</a></td></tr>
+              <tr><td>Full week, immersive</td><td><a href="../../retreat/">Retreat</a></td></tr>
             </tbody>
           </table>
-          <p>Still unsure? <a href="../contact/">Message us</a> with your dates and experience — we place you correctly.</p>
+          <p>Still unsure? <a href="../../contact/">Message us</a> with your dates and experience — we place you correctly.</p>
         """,
-        "related": ["freediving-unawatuna", "freediving-vs-scuba-sri-lanka", "best-time-freediving-sri-lanka"],
+        "related": ["freediving-unawatuna", "molchanovs-vs-padi-sri-lanka", "freediving-course-cost-sri-lanka"],
     },
     {
         "slug": "freediving-vs-scuba-sri-lanka",
@@ -272,9 +414,9 @@ GUIDES = [
           <h2>Can you do both?</h2>
           <p>Yes, on a long trip — but not usually the same day. Freediving after scuba requires careful scheduling because of residual nitrogen; we advise separating them by 24 hours or planning freediving first.</p>
           <h2>Which fits you?</h2>
-          <p>Choose scuba if you want maximum underwater time with less breath-hold stress. Choose freediving if you want minimal gear, a meditative sport, and the challenge of self-reliance on one breath. Many travellers try <a href="../courses/">Discover</a> before committing to either path.</p>
+          <p>Choose scuba if you want maximum underwater time with less breath-hold stress. Choose freediving if you want minimal gear, a meditative sport, and the challenge of self-reliance on one breath. Many travellers try <a href="../../courses/">Discover</a> before committing to either path.</p>
         """,
-        "related": ["freediving-unawatuna", "molchanovs-courses-explained", "top-10-southern-sri-lanka"],
+        "related": ["freediving-unawatuna", "molchanovs-vs-padi-sri-lanka", "molchanovs-courses-explained"],
     },
     {
         "slug": "south-coast-7-day-itinerary",
@@ -286,13 +428,13 @@ GUIDES = [
         "subtitle": "A practical week with water, fort, and whales.",
         "image": ("photos/session-pair.jpg", "Freedivers on the line off Sri Lanka south coast"),
         "body": """
-          <p>This itinerary assumes <strong>November–April</strong> dry season and bases you in Unawatuna with day trips east and west. Adjust if you are taking a full <a href="../courses/">Wave 1 course</a> (three water days) or the <a href="../retreat/">five-day retreat</a>.</p>
+          <p>This itinerary assumes <strong>November–April</strong> dry season and bases you in Unawatuna with day trips east and west. Adjust if you are taking a full <a href="../../courses/">Wave 1 course</a> (three water days) or the <a href="../../retreat/">five-day retreat</a>.</p>
           <h2>Day 1 — Arrive, Unawatuna</h2>
           <p>Transfer from Colombo (2.5 h). Check in, swim the bay, sunset walk to Jungle Beach or the pagoda. Early night — jet lag and tomorrow's water.</p>
           <h2>Day 2 — Galle Fort</h2>
           <p>Morning ramparts and coffee in the fort. Afternoon back in Unawatuna for snorkel or beach. Dinner on the beach road.</p>
           <h2>Days 3–5 — Freediving Wave 1 (or retreat)</h2>
-          <p>Three-day certification: theory, pool, open water. If not diving, substitute Weligama surf (day 3), Koggala lake boat (day 4), and Handunugoda tea (day 5). See <a href="top-10-southern-sri-lanka/">top ten activities</a>.</p>
+          <p>Three-day certification: theory, pool, open water. If not diving, substitute Weligama surf (day 3), Koggala lake boat (day 4), and Handunugoda tea (day 5). See <a href="../top-10-southern-sri-lanka/">top ten activities</a>.</p>
           <h2>Day 6 — Mirissa</h2>
           <p>Whale watching if in season (book ahead). Lunch in Mirissa, optional coconut hill viewpoint. Return to Unawatuna for last-night dinner.</p>
           <h2>Day 7 — Depart or extend</h2>
@@ -301,15 +443,31 @@ GUIDES = [
           <ul class="plain">
             <li><strong>+3 days:</strong> Yala national park safari</li>
             <li><strong>+4 days:</strong> Ella tea country and trains</li>
-            <li><strong>+5 days:</strong> Our <a href="../retreat/">freediving retreat</a> instead of scattered day trips</li>
+            <li><strong>+5 days:</strong> Our <a href="../../retreat/">freediving retreat</a> instead of scattered day trips</li>
           </ul>
-          <p>Questions on dates? <a href="../contact/">Get in touch</a> — we help fit courses into your route.</p>
+          <p>Questions on dates? <a href="../../contact/">Get in touch</a> — we help fit courses into your route.</p>
         """,
         "related": ["unawatuna-travel-guide", "top-10-southern-sri-lanka", "best-time-freediving-sri-lanka"],
     },
 ]
 
 GUIDE_SEO = {
+    "molchanovs-vs-padi-sri-lanka": (
+        "Molchanovs vs PADI Freediving in Sri Lanka",
+        "PADI is easier to find. Molchanovs is what we teach. How the two systems differ for a course in Unawatuna.",
+    ),
+    "freediving-course-cost-sri-lanka": (
+        "How Much a Freediving Course Costs in Sri Lanka",
+        "Molchanovs prices in Unawatuna: Discover €120, Wave 1 €350, Wave 2 €450. What is included, deposits, and how to budget.",
+    ),
+    "first-freedive-unawatuna": (
+        "Your First Freedive in Unawatuna (Beginners)",
+        "Is freediving scary? Do you need to swim 200 m? What happens on a first Discover or Wave 1 session in Unawatuna.",
+    ),
+    "turtles-freediving-unawatuna": (
+        "Turtles While Freediving in Unawatuna",
+        "Green turtles and reef life in Unawatuna — when you might see them, and the rules so wildlife stays wild.",
+    ),
     "top-10-southern-sri-lanka": (
         "10 Things to Do on Sri Lanka's South Coast",
         "Galle Fort, Unawatuna beach, whales in Mirissa, and a freediving course — the best days near Lanka Freediving.",
@@ -823,14 +981,7 @@ def write_llms() -> None:
         Galle Fort (15 min), Mirissa whales (Dec–Apr), Weligama surf, Koggala lake, Jungle Beach
 
         GUIDES (organic content)
-        {SITE}/guides/top-10-southern-sri-lanka/
-        {SITE}/guides/unawatuna-travel-guide/
-        {SITE}/guides/galle-and-unawatuna/
-        {SITE}/guides/best-time-freediving-sri-lanka/
-        {SITE}/guides/freediving-unawatuna/
-        {SITE}/guides/molchanovs-courses-explained/
-        {SITE}/guides/freediving-vs-scuba-sri-lanka/
-        {SITE}/guides/south-coast-7-day-itinerary/
+        {chr(10).join(f"        {SITE}/guides/{g['slug']}/" for g in GUIDES)}
     """))
 
 
@@ -849,7 +1000,7 @@ def generate_images() -> None:
         bg.paste(img, (0, 0), img)
         bg.convert("RGB").save(PUBLIC / "favicon.ico", format="ICO", sizes=[(64, 64)])
         print("wrote favicon.ico")
-    if hero.exists():
+    if hero.exists() and not (ASSETS / "og-default.jpg").exists():
         img = Image.open(hero).convert("RGB")
         w, h = img.size
         target = 630 / 1200
@@ -909,9 +1060,9 @@ def add_home_guide_cards() -> None:
       <p class="section-label reveal" id="guides-label">Guides</p>
       <h2 class="tease-title reveal">Plan your south coast trip</h2>
       <div class="guide-teasers reveal">
-        <p><a href="guides/top-10-southern-sri-lanka/">Top 10 things to do on the south coast</a></p>
-        <p><a href="guides/freediving-unawatuna/">Freediving in Unawatuna — complete guide</a></p>
-        <p><a href="guides/best-time-freediving-sri-lanka/">Best time for freediving in Sri Lanka</a></p>
+        <p><a href="guides/molchanovs-vs-padi-sri-lanka/">Molchanovs vs PADI in Sri Lanka</a></p>
+        <p><a href="guides/first-freedive-unawatuna/">Your first freedive in Unawatuna</a></p>
+        <p><a href="guides/freediving-course-cost-sri-lanka/">How much a course costs</a></p>
         <p style="margin-top:1rem"><a class="btn" href="guides/">All guides</a></p>
       </div>
     </section>
