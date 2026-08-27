@@ -87,6 +87,9 @@
         .then(function (res) {
           return res.json().then(function (body) {
             if (!res.ok) throw new Error(body.error || "Send failed");
+            if (typeof gtag === "function") {
+              gtag("event", "contact_form_submit");
+            }
             form.hidden = true;
             if (success) success.hidden = false;
           });

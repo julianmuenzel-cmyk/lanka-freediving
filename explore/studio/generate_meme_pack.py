@@ -28,7 +28,7 @@ COURSES = [
     {
         "slug": "discover",
         "name": "Discover Freediving",
-        "meta": "No certification · Half day · €120",
+        "meta": "No certification · Half day · €150",
         "copy": "Breathing and relaxation fundamentals, a shallow-water breath-hold session, safety basics. For snorkellers, surfers, and the curious.",
         "photo": "session-open.jpg",
         "bg": YELLOW,
